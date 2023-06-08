@@ -1,0 +1,140 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 4988
+License: Customer
+
+Current time: 	Tue Apr 04 18:48:57 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows Server 2016
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 32
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 12 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/vivado2019/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	D:/vivado2019/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado2019/Vivado
+HDI_APPROOT: D:/vivado2019/Vivado/2019.1
+RDI_DATADIR: D:/vivado2019/Vivado/2019.1/data
+RDI_BINDIR: D:/vivado2019/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	D:/vivado2019/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/vivado.log
+Vivado journal file location: 	d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/vivado.jou
+Engine tmp dir: 	d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/.Xil/Vivado-4988-LYC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado2019/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: D:/vivado2019/Vivado/2019.1/ids_lite/ISE
+XILINX_FOR_ALTIUM_OVERRIDE:  
+XILINX_PLANAHEAD: D:/vivado2019/Vivado/2019.1
+XILINX_SDK: D:/vivado2019/SDK/2019.1
+XILINX_VIVADO: D:/vivado2019/Vivado/2019.1
+XILINX_VIVADO_HLS: D:/vivado2019/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 690 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// by (cl):  Sourcing Tcl script 'd:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/project_1/project_1.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl' : addNotify
+// Tcl Message: source d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/project_1/project_1.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl -notrace 
+// Tcl Message: INFO: [open_example_project] Creating new example project... 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'd:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 46 MB. Current time: 4/4/23, 6:48:59 PM CST
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+55402kb) [00:00:21]
+// [Engine Memory]: 764 MB (+649947kb) [00:00:21]
+// [GUI Memory]: 74 MB (+16556kb) [00:00:22]
+// [GUI Memory]: 93 MB (+15950kb) [00:00:23]
+// [GUI Memory]: 100 MB (+2453kb) [00:00:23]
+// [Engine Memory]: 823 MB (+21858kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  5132 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 109 MB (+4922kb) [00:00:31]
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: create_project: Time (s): cpu = 00:00:48 ; elapsed = 00:00:17 . Memory (MB): peak = 891.422 ; gain = 163.453 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+// Tcl Message: INFO: [open_example_project] Importing original IP ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Generating the example project IP ... INFO: [open_example_project] Adding example synthesis HDL files ... INFO: [open_example_project] Adding example synthesis miscellaneous files ... INFO: [open_example_project] Adding example XDC files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [open_example_project] Rebuilding all the top level IPs ... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 12 20:19:04 2023
+# Process ID: 7336
+# Current directory: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/impl_1_copy_1
+# Command line: vivado.exe -log golden_rgmii_1gb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source golden_rgmii_1gb.tcl -notrace
+# Log file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/impl_1_copy_1/golden_rgmii_1gb.vdi
+# Journal file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/impl_1_copy_1\vivado.jou
+#-----------------------------------------------------------
+source golden_rgmii_1gb.tcl -notrace

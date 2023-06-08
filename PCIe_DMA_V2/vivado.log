@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 27 10:31:27 2022
+# Process ID: 7924
+# Current directory: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5844 D:\BaiduNetdiskDownload\STLV7325-赛特凌威板子资料\test_code_vivado2019\CD1\PCIe_DMA_V2\PCIe_DMA_V2_5031_spix4_ok\PCIE_DMA_Demo.xpr
+# Log file: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok'
+WARNING: [Board 49-91] Board repository path 'C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from 'F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 926.570 ; gain = 251.070
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 27 10:34:10 2022...

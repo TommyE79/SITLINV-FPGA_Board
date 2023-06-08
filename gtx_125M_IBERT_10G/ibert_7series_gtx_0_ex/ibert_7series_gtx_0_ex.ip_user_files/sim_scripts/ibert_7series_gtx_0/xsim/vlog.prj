@@ -1,0 +1,6 @@
+sv xil_defaultlib --include "../../../../ibert_7series_gtx_0_ex.srcs/sources_1/ip/ibert_7series_gtx_0/hdl" \
+"D:/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

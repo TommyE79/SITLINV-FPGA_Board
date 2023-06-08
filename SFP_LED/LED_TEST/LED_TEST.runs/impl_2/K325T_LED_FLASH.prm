@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xEEDE2419
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                        Checksum
+0x00000000    0x000FE7C3    Aug 12 14:19:27 2021    F:/K325/LED_TEST/LED_TEST/LED_TEST.runs/impl_2/led_test.bit    0x00B60055
+File Checksum Total                                                                                                0x00B60055

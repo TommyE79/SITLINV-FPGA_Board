@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 19:49:08 2023
+# Process ID: 5116
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1600 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\hdmi_inout\hdmi_inout\project_1\project_1.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/memblaze_hdmi_inout/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'video_pll' (customized with software release 2017.4) has a newer major version in the IP Catalog. * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+INFO: [Project 1-230] Project 'project_1.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 929.270 ; gain = 220.145
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset video_pll -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  video_pll] -log ip_upgrade.log
+Upgrading 'video_pll'
+INFO: [Project 1-386] Moving file 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci' from fileset 'video_pll' to fileset 'sources_1'.
+INFO: [IP_Flow 19-1972] Upgraded video_pll from Clocking Wizard 5.4 to Clocking Wizard 6.0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1071.512 ; gain = 128.906
+export_ip_user_files -of_objects [get_ips video_pll] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+set_property flow {Vivado Implementation 2019} [get_runs impl_1]
+create_run impl_676 -parent_run synth_1 -flow {Vivado Implementation 2019} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7k325tffg900-2
+current_run [get_runs impl_676]
+set_property part xc7k325tffg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-2' used to customize the IP 'video_pll' do not match.
+reset_run synth_1
+launch_runs impl_676 -to_step write_bitstream -jobs 32
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci' in run video_pll_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci
+
+WARNING: [Project 1-576] IP 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci' in run video_pll_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Wed Jan 11 19:51:52 2023] Launched video_pll_synth_1, synth_1...
+Run output will be captured here:
+video_pll_synth_1: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/video_pll_synth_1/runme.log
+synth_1: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/runme.log
+[Wed Jan 11 19:51:53 2023] Launched impl_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/runme.log
+upgrade_ip -srcset video_pll -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  video_pll] -log ip_upgrade.log
+Upgrading 'video_pll'
+INFO: [Project 1-386] Moving file 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll.xci' from fileset 'video_pll' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated video_pll to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1154.523 ; gain = 2.035
+export_ip_user_files -of_objects [get_ips video_pll] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_676 -to_step write_bitstream -jobs 32
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'video_pll'...
+[Wed Jan 11 19:53:48 2023] Launched video_pll_synth_1, synth_1...
+Run output will be captured here:
+video_pll_synth_1: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/video_pll_synth_1/runme.log
+synth_1: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/runme.log
+[Wed Jan 11 19:53:48 2023] Launched impl_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library dpcomm.dll, first required symbol ftdimgr_lock, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library djtg.dll, first required symbol DjtgGetPortCount, select Digilent JTAG cables cannot be supported
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1162.027 ; gain = 7.266
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/DebugChannelA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2289.301 ; gain = 1127.273
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2357.539 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/DebugChannelA
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 20:07:13 2023...

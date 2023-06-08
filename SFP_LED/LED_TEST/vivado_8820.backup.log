@@ -1,0 +1,280 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Oct 14 14:42:07 2018
+# Process ID: 8820
+# Current directory: E:/LED_TEST/LED_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1408 E:\LED_TEST\LED_TEST\LED_TEST.xpr
+# Log file: E:/LED_TEST/LED_TEST/vivado.log
+# Journal file: E:/LED_TEST/LED_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/LED_TEST/LED_TEST/LED_TEST.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/VIVADO2016/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 837.844 ; gain = 170.004
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Oct 14 14:44:22 2018] Launched synth_1...
+Run output will be captured here: E:/LED_TEST/LED_TEST/LED_TEST.runs/synth_1/runme.log
+[Sun Oct 14 14:44:22 2018] Launched impl_1...
+Run output will be captured here: E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7k420tiffg901-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/LED_TEST/LED_TEST/.Xil/Vivado-8820-lyc-PC/dcp/led_test.xdc]
+Finished Parsing XDC File [E:/LED_TEST/LED_TEST/.Xil/Vivado-8820-lyc-PC/dcp/led_test.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1100.875 ; gain = 0.020
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1100.875 ; gain = 0.020
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.520 ; gain = 369.219
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+current_hw_device [lindex [get_hw_devices xc7k420t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k420t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q256-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k420t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "E:/usb_ttl_ch340/usb_ttl/usb_ttl.runs/impl_1/usb_ttl.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Program/Verify Operation failed.
+
+ERROR: [Labtools 27-2248] Operation was cancelled.
+program_hw_cfgmem: Time (s): cpu = 00:00:05 ; elapsed = 00:03:35 . Memory (MB): peak = 1805.406 ; gain = 47.047
+INFO: [Common 17-344] 'program_hw_cfgmem' was cancelled
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit "up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit " -checksum -force -disablebitswap -file "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test"
+Command: write_cfgmem -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit } -checksum -force -disablebitswap -file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit
+Writing file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs
+Writing log file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE474CD41
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                   Checksum
+0x00000000    0x001AE7C7    Oct 14 14:48:48 2018    E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit    0x0141AD79
+File Checksum Total                                                                                           0x0141AD79
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1924.875 ; gain = 119.469
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit "up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit " -checksum -force -disablebitswap -file "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test"
+Command: write_cfgmem -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit } -checksum -force -disablebitswap -file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit
+Writing file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs
+Writing log file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE474CD41
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                   Checksum
+0x00000000    0x001AE7C7    Oct 14 14:48:48 2018    E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit    0x0141AD79
+File Checksum Total                                                                                           0x0141AD79
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.027 ; gain = 5.152
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit "up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit " -checksum -force -disablebitswap -file "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test"
+Command: write_cfgmem -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit } -checksum -force -disablebitswap -file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit
+Writing file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs
+Writing log file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE474CD41
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                   Checksum
+0x00000000    0x001AE7C7    Oct 14 14:48:48 2018    E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit    0x0141AD79
+File Checksum Total                                                                                           0x0141AD79
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1933.055 ; gain = 3.027
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q256-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k420t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.PRM_FILE {E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:01:34 . Memory (MB): peak = 1933.055 ; gain = 0.000
+endgroup
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Oct 14 15:02:13 2018] Launched synth_1...
+Run output will be captured here: E:/LED_TEST/LED_TEST/LED_TEST.runs/synth_1/runme.log
+[Sun Oct 14 15:02:13 2018] Launched impl_1...
+Run output will be captured here: E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+current_hw_device [lindex [get_hw_devices xc7k420t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k420t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q256-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7k420t_0] 0]
+set_property PROGRAM.FILE {E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit} [lindex [get_hw_devices xc7k420t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k420t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k420t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit "up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit " -checksum -force -disablebitswap -file "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test"
+Command: write_cfgmem -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit } -checksum -force -disablebitswap -file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit
+Writing file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs
+Writing log file E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE4917DF3
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                   Checksum
+0x00000000    0x001ACB0F    Oct 14 15:06:44 2018    E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/led_test.bit    0x0141C2E3
+File Checksum Total                                                                                           0x0141C2E3
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1933.055 ; gain = 0.000
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.PRM_FILE {E:/LED_TEST/LED_TEST/LED_TEST.runs/impl_1/test.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:33 . Memory (MB): peak = 1933.055 ; gain = 0.000
+endgroup
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 14 15:11:12 2018...

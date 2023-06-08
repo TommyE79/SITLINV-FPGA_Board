@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jul 17 16:54:21 2020
+# Process ID: 2680
+# Current directory: F:/K325667/uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7980 F:\K325667\uart_test\uart_test\uart_test.xpr
+# Log file: F:/K325667/uart_test/uart_test/vivado.log
+# Journal file: F:/K325667/uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/uart_test/uart_test/uart_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 894.309 ; gain = 127.770
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 17:09:49 2020...

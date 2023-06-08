@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ddr_synth_1" LaunchDir="D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.runs/ddr_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

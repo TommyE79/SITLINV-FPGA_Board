@@ -1,0 +1,56 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Feb  7 12:15:50 2023
+| Host         : LYC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file uart_test_methodology_drc_routed.rpt -pb uart_test_methodology_drc_routed.pb -rpx uart_test_methodology_drc_routed.rpx
+| Design       : uart_test
+| Device       : xc7k325tffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 3          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell uart_rx_inst/FSM_onehot_state[4]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) FSM_sequential_state_reg[0]/CLR, FSM_sequential_state_reg[1]/CLR, tx_cnt_reg[0]/CLR, tx_cnt_reg[1]/CLR, tx_cnt_reg[2]/CLR, tx_cnt_reg[3]/CLR, tx_data_reg[0]/CLR, tx_data_reg[1]/CLR, tx_data_reg[2]/CLR, tx_data_reg[3]/CLR, tx_data_reg[4]/CLR, tx_data_reg[5]/CLR, tx_data_reg[6]/CLR, tx_data_reg[7]/CLR, tx_data_valid_reg/CLR (the first 15 of 123 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) sys_clk_p
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on uart_rx relative to clock(s) sys_clk_p
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on uart_tx relative to clock(s) sys_clk_p
+Related violations: <none>
+
+

@@ -1,0 +1,752 @@
+
+*** Running vivado
+    with args -log k7325t_ddr3_1066_golden.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source k7325t_ddr3_1066_golden.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source k7325t_ddr3_1066_golden.tcl -notrace
+Command: synth_design -top k7325t_ddr3_1066_golden -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 880.023 ; gain = 177.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'k7325t_ddr3_1066_golden' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/k7325t_ddr3_1066_golden.v:7]
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DQ_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 28 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 64 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter BURST_LENGTH_2LOG bound to: 3 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ddr' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.runs/synth_1/.Xil/Vivado-5396-LYC/realtime/ddr_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr' (1#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.runs/synth_1/.Xil/Vivado-5396-LYC/realtime/ddr_stub.v:5]
+WARNING: [Synth 8-7023] instance 'ddr_inst0' of module 'ddr' has 40 connections declared, but only 39 given [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/k7325t_ddr3_1066_golden.v:118]
+INFO: [Synth 8-6157] synthesizing module 'mem_burst' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_burst.v:2]
+	Parameter MEM_DATA_BITS bound to: 512 - type: integer 
+	Parameter ADDR_BITS bound to: 28 - type: integer 
+	Parameter BURST_LENGTH_2LOG bound to: 3 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter MEM_READ bound to: 3'b001 
+	Parameter MEM_READ_WAIT bound to: 3'b010 
+	Parameter MEM_WRITE bound to: 3'b011 
+	Parameter MEM_WRITE_WAIT bound to: 3'b100 
+	Parameter READ_END bound to: 3'b101 
+	Parameter WRITE_END bound to: 3'b110 
+	Parameter MEM_WRITE_FIRST_READ bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_burst.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'mem_burst' (2#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_burst.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mem_test' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_test.v:3]
+	Parameter MEM_DATA_BITS bound to: 512 - type: integer 
+	Parameter ADDR_BITS bound to: 28 - type: integer 
+	Parameter BURST_LENGTH bound to: 128 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter MEM_READ bound to: 3'b001 
+	Parameter MEM_WRITE bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'mem_test' (3#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_test.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'k7325t_ddr3_1066_golden' (4#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/user/k7325t_ddr3_1066_golden.v:7]
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[7] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[6] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[5] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[4] driven by constant 1
+WARNING: [Synth 8-3331] design mem_burst has unconnected port rd_burst_addr[27]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port rd_burst_addr[26]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port rd_burst_addr[25]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port wr_burst_addr[27]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port wr_burst_addr[26]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port wr_burst_addr[25]
+WARNING: [Synth 8-3331] design mem_burst has unconnected port app_rd_data_end
+WARNING: [Synth 8-3331] design mem_burst has unconnected port ui_clk_sync_rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 944.137 ; gain = 241.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 944.137 ; gain = 241.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 944.137 ; gain = 241.387
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc] for cell 'ddr_inst0'
+Finished Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc] for cell 'ddr_inst0'
+Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/constrs_1/new/k7325t_ddr3_1066_golden.xdc]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/constrs_1/new/k7325t_ddr3_1066_golden.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/constrs_1/new/k7325t_ddr3_1066_golden.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/k7325t_ddr3_1066_golden_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/k7325t_ddr3_1066_golden_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1080.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1080.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[32]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[32]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[33]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[33]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[34]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[34]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[35]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[35]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[36]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[36]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[37]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[37]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[38]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[38]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[39]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[39]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[40]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[40]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[41]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[41]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[42]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[42]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[43]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[43]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[44]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[44]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[45]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[45]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[46]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[46]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[47]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[47]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[48]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[48]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[49]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[49]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[50]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[50]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[51]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[51]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[52]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[52]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[53]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[53]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[54]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[54]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[55]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[55]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[56]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[56]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[57]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[57]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[58]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[58]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[59]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[59]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[60]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[60]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[61]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[61]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[62]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[62]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[63]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[63]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[4]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[5]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[6]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[7]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/ddr_in_context.xdc, line 234).
+Applied set_property DONT_TOUCH = true for ddr_inst0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mem_burst'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mem_test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                MEM_READ |                              001 |                              001
+           MEM_READ_WAIT |                              010 |                              010
+                READ_END |                              011 |                              101
+               MEM_WRITE |                              100 |                              011
+          MEM_WRITE_WAIT |                              101 |                              100
+               WRITE_END |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mem_burst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                              000
+               MEM_WRITE |                              010 |                              010
+                MEM_READ |                              100 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mem_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   7 Input     28 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   7 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mem_burst 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   7 Input     28 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 11    
+Module mem_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[7] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[6] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[5] driven by constant 1
+WARNING: [Synth 8-3917] design k7325t_ddr3_1066_golden has port leds[4] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[0]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[1]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[2]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[3]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[4]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[5]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[6]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mem_test_inst0/wr_burst_len_reg[7] )
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_len_reg[8]' (FDCE) to 'mem_test_inst0/wr_burst_len_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_test_inst0/wr_burst_len_reg[9] )
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[0]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[1]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[2]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[3]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[4]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[5]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[6]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mem_test_inst0/rd_burst_len_reg[7] )
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/rd_burst_len_reg[8]' (FDCE) to 'mem_test_inst0/rd_burst_len_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_test_inst0/rd_burst_len_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\mem_test_inst0/wr_burst_addr_reg[6] )
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[0]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[1]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[2]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[3]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[4]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[5]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[6]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[7]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[8]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[9]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[10]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[11]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[12]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[13]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[14]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[15]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[16]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[17]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[18]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[19]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[20]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[21]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[22]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[23]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[24]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[25]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[26]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[27]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[28]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[36]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[29]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[37]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[30]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[31]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[39]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[32]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[33]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[34]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[35]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[36]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[37]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[38]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[46]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[39]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[47]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[40]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[41]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[42]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[43]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[44]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[45]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[53]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[46]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[54]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[47]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[55]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[48]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[49]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[50]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[51]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[52]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[53]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[54]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[55]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[56]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[64]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[57]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[65]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[58]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[66]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[59]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[67]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[60]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[68]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[61]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[69]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[62]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[70]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[63]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[71]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[64]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[72]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[65]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[73]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[66]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[74]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[67]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[75]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[68]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[76]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[69]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[77]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[70]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[78]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[71]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[79]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[72]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[80]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[73]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[81]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[74]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[82]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[75]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[83]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[76]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[84]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[77]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[85]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[78]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[86]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[79]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[87]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[80]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[88]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[81]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[89]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[82]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[90]'
+INFO: [Synth 8-3886] merging instance 'mem_test_inst0/wr_burst_data_reg_reg[83]' (FDCE) to 'mem_test_inst0/wr_burst_data_reg_reg[91]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_burst_inst0/app_cmd_r_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ddr_inst0/ui_clk' to pin 'ddr_inst0/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1080.371 ; gain = 377.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1083.180 ; gain = 380.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop mem_test_inst0/error_reg is being inverted and renamed to mem_test_inst0/error_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ddr           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ddr    |     1|
+|2     |CARRY4 |    59|
+|3     |LUT1   |     9|
+|4     |LUT2   |     9|
+|5     |LUT3   |    26|
+|6     |LUT4   |    26|
+|7     |LUT5   |    25|
+|8     |LUT6   |   232|
+|9     |FDCE   |   137|
+|10    |FDPE   |     2|
+|11    |IBUF   |     1|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------+------+
+|      |Instance          |Module    |Cells |
++------+------------------+----------+------+
+|1     |top               |          |  1102|
+|2     |  mem_burst_inst0 |mem_burst |   215|
+|3     |  mem_test_inst0  |mem_test  |   307|
++------+------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1085.004 ; gain = 246.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1085.004 ; gain = 382.254
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1102.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1102.082 ; gain = 693.332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1102.082 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.runs/synth_1/k7325t_ddr3_1066_golden.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file k7325t_ddr3_1066_golden_utilization_synth.rpt -pb k7325t_ddr3_1066_golden_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 10:59:24 2023...

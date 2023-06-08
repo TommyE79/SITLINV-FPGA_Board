@@ -1,0 +1,221 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = k7325t_ddr3_1066_golden
+Directory = G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - Excluded Runs
+---------------------------
+The run results were excluded for the following runs in the archived project:-
+
+<synth_1>
+<ddr_synth_1>
+<impl_1>
+<ddr_impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<ddr>
+None
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_burst.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_test.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/user/k7325t_ddr3_1066_golden.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_a.prj
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_b.prj
+
+<constrs_1>
+./k7325t_ddr3_1066_golden.srcs/constrs_1/new/k7325t_ddr3_1066_golden.xdc
+
+<sim_1>
+None
+
+<ddr>
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr.xci
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/doc/mig_7series_v4_1_changelog.txt
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/constraints/ddr.xdc
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/constraints/ddr_ooc.xdc
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr.veo
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_arb_select.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_common.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_bank_state.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_col_mach.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_mc.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_rank_common.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_lane.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_calib_top.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_if_post_fifo.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy_wrapper.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_of_pre_fifo.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_4lanes.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal_hr.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_init.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_cntlr.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_data.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_edge.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_lim.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_mux.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_po_cntlr.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_samp.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_oclkdelay_cal.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_prbs_rdlvl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_rdlvl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_tempmon.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_top.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrcal.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl_off_delay.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_prbs_gen.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_ddr_skip_calib_tap.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_cc.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_edge_store.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_meta.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_pd.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_tap_base.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_1_poc_top.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_1_ui_cmd.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_1_ui_rd_data.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_1_ui_top.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ddr_mig_sim.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ddr.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr.dcp
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr_stub.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr_stub.vhdl
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr_sim_netlist.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr_sim_netlist.vhdl
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ddr_mig.v
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/ddr.xml
+./k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_a.prj
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+None
+
+<ddr>
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/briansuneZ/AppData/Roaming/Xilinx/Vivado/vivado.jou
+Archived Location = ./k7325t_ddr3_1066_golden/vivado.jou
+
+Source File = C:/Users/briansuneZ/AppData/Roaming/Xilinx/Vivado/vivado.log
+Archived Location = ./k7325t_ddr3_1066_golden/vivado.log
+

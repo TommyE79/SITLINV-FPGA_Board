@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Aug 12 14:19:27 2021'>
+<section name="__ROOT__" level="0" order="1" description="">
+ <section name="software_version_and_target_device" level="1" order="1" description="">
+  <keyValuePair key="beta" value="FALSE" description="" />
+  <keyValuePair key="build_version" value="2552052" description="" />
+  <keyValuePair key="date_generated" value="Thu Aug 12 14:19:27 2021" description="" />
+  <keyValuePair key="os_platform" value="WIN64" description="" />
+  <keyValuePair key="product_version" value="Vivado v2019.1 (64-bit)" description="" />
+  <keyValuePair key="project_id" value="648e2b1d7c324256b69e070cc81bf24d" description="" />
+  <keyValuePair key="project_iteration" value="4" description="" />
+  <keyValuePair key="random_id" value="ecec26931d1a520d9ecc7e285e92cd2c" description="" />
+  <keyValuePair key="registration_id" value="ecec26931d1a520d9ecc7e285e92cd2c" description="" />
+  <keyValuePair key="route_design" value="TRUE" description="" />
+  <keyValuePair key="target_device" value="xc7k325t" description="" />
+  <keyValuePair key="target_family" value="kintex7" description="" />
+  <keyValuePair key="target_package" value="ffg676" description="" />
+  <keyValuePair key="target_speed" value="-2" description="" />
+  <keyValuePair key="tool_flow" value="Vivado" description="" />
+ </section>
+ <section name="user_environment" level="1" order="2" description="">
+  <keyValuePair key="cpu_name" value="Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2200 MHz" description="" />
+  <keyValuePair key="os_name" value="Windows Server 2016 or Windows 10" description="" />
+  <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
+  <keyValuePair key="system_ram" value="17.000 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
+ </section>
+ <section name="synthesis" level="1" order="3" description="">
+  <section name="command_line_options" level="2" order="1" description="">
+   <keyValuePair key="-assert" value="default::[not_specified]" description="" />
+   <keyValuePair key="-bufg" value="default::12" description="" />
+   <keyValuePair key="-cascade_dsp" value="default::auto" description="" />
+   <keyValuePair key="-constrset" value="default::[not_specified]" description="" />
+   <keyValuePair key="-control_set_opt_threshold" value="default::auto" description="" />
+   <keyValuePair key="-directive" value="default::default" description="" />
+   <keyValuePair key="-fanout_limit" value="default::10000" description="" />
+   <keyValuePair key="-flatten_hierarchy" value="default::rebuilt" description="" />
+   <keyValuePair key="-fsm_extraction" value="default::auto" description="" />
+   <keyValuePair key="-gated_clock_conversion" value="default::off" description="" />
+   <keyValuePair key="-generic" value="default::[not_specified]" description="" />
+   <keyValuePair key="-include_dirs" value="default::[not_specified]" description="" />
+   <keyValuePair key="-keep_equivalent_registers" value="default::[not_specified]" description="" />
+   <keyValuePair key="-max_bram" value="default::-1" description="" />
+   <keyValuePair key="-max_bram_cascade_height" value="default::-1" description="" />
+   <keyValuePair key="-max_dsp" value="default::-1" description="" />
+   <keyValuePair key="-max_uram" value="default::-1" description="" />
+   <keyValuePair key="-max_uram_cascade_height" value="default::-1" description="" />
+   <keyValuePair key="-mode" value="default::default" description="" />
+   <keyValuePair key="-name" value="default::[not_specified]" description="" />
+   <keyValuePair key="-no_lc" value="default::[not_specified]" description="" />
+   <keyValuePair key="-no_srlextract" value="default::[not_specified]" description="" />
+   <keyValuePair key="-no_timing_driven" value="default::[not_specified]" description="" />
+   <keyValuePair key="-part" value="xc7k325tffg676-2" description="" />
+   <keyValuePair key="-resource_sharing" value="default::auto" description="" />
+   <keyValuePair key="-retiming" value="default::[not_specified]" description="" />
+   <keyValuePair key="-rtl" value="default::[not_specified]" description="" />
+   <keyValuePair key="-rtl_skip_constraints" value="default::[not_specified]" description="" />
+   <keyValuePair key="-rtl_skip_ip" value="default::[not_specified]" description="" />
+   <keyValuePair key="-seu_protect" value="default::none" description="" />
+   <keyValuePair key="-sfcu" value="default::[not_specified]" description="" />
+   <keyValuePair key="-shreg_min_size" value="default::3" description="" />
+   <keyValuePair key="-top" value="led_test" description="" />
+   <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
+  </section>
+  <section name="usage" level="2" order="2" description="">
+   <keyValuePair key="elapsed" value="00:00:49s" description="" />
+   <keyValuePair key="hls_ip" value="0" description="" />
+   <keyValuePair key="memory_gain" value="658.605MB" description="" />
+   <keyValuePair key="memory_peak" value="1000.637MB" description="" />
+  </section>
+ </section>
+ <section name="unisim_transformation" level="1" order="4" description="">
+  <section name="post_unisim_transformation" level="2" order="1" description="">
+   <keyValuePair key="bufg" value="1" description="" />
+   <keyValuePair key="carry4" value="7" description="" />
+   <keyValuePair key="fdre" value="28" description="" />
+   <keyValuePair key="gnd" value="1" description="" />
+   <keyValuePair key="ibuf" value="1" description="" />
+   <keyValuePair key="lut1" value="1" description="" />
+   <keyValuePair key="lut4" value="8" description="" />
+   <keyValuePair key="obuf" value="8" description="" />
+   <keyValuePair key="vcc" value="1" description="" />
+  </section>
+  <section name="pre_unisim_transformation" level="2" order="2" description="">
+   <keyValuePair key="bufg" value="1" description="" />
+   <keyValuePair key="carry4" value="7" description="" />
+   <keyValuePair key="fdre" value="28" description="" />
+   <keyValuePair key="gnd" value="1" description="" />
+   <keyValuePair key="ibuf" value="1" description="" />
+   <keyValuePair key="lut1" value="1" description="" />
+   <keyValuePair key="lut4" value="8" description="" />
+   <keyValuePair key="obuf" value="8" description="" />
+   <keyValuePair key="vcc" value="1" description="" />
+  </section>
+ </section>
+ <section name="vivado_usage" level="1" order="5" description="">
+  <section name="gui_handlers" level="2" order="1" description="">
+   <keyValuePair key="basedialog_ok" value="7" description="" />
+   <keyValuePair key="basedialog_yes" value="3" description="" />
+   <keyValuePair key="copyrundialog_run_name" value="1" description="" />
+   <keyValuePair key="filesetpanel_file_set_panel_tree" value="12" description="" />
+   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="2" description="" />
+   <keyValuePair key="fpgachooser_family" value="1" description="" />
+   <keyValuePair key="fpgachooser_fpga_table" value="1" description="" />
+   <keyValuePair key="fpgachooser_package" value="1" description="" />
+   <keyValuePair key="fpgachooser_speed" value="1" description="" />
+   <keyValuePair key="msgtreepanel_message_view_tree" value="4" description="" />
+   <keyValuePair key="rdicommands_save_file" value="2" description="" />
+   <keyValuePair key="rdicommands_settings" value="1" description="" />
+   <keyValuePair key="settingsprojectgeneralpage_choose_device_for_your_project" value="1" description="" />
+  </section>
+  <section name="java_command_handlers" level="2" order="2" description="">
+   <keyValuePair key="addcfgmem" value="2" description="" />
+   <keyValuePair key="addsources" value="2" description="" />
+   <keyValuePair key="configurebitstream" value="2" description="" />
+   <keyValuePair key="editproperties" value="4" description="" />
+   <keyValuePair key="launchprogramfpga" value="1" description="" />
+   <keyValuePair key="newproject" value="1" description="" />
+   <keyValuePair key="openhardwaremanager" value="2" description="" />
+   <keyValuePair key="openrecenttarget" value="6" description="" />
+   <keyValuePair key="programcfgmem" value="5" description="" />
+   <keyValuePair key="programdevice" value="2" description="" />
+   <keyValuePair key="projectsettingscmdhandler" value="1" description="" />
+   <keyValuePair key="runbitgen" value="5" description="" />
+   <keyValuePair key="runimplementation" value="1" description="" />
+   <keyValuePair key="showview" value="3" description="" />
+   <keyValuePair key="toolssettings" value="1" description="" />
+   <keyValuePair key="viewtaskimplementation" value="2" description="" />
+   <keyValuePair key="writecfgmemfile" value="4" description="" />
+  </section>
+  <section name="other_data" level="2" order="3" description="">
+   <keyValuePair key="guimode" value="3" description="" />
+  </section>
+  <section name="project_data" level="2" order="4" description="">
+   <keyValuePair key="constraintsetcount" value="1" description="" />
+   <keyValuePair key="core_container" value="false" description="" />
+   <keyValuePair key="currentimplrun" value="impl_2" description="" />
+   <keyValuePair key="currentsynthesisrun" value="synth_325T" description="" />
+   <keyValuePair key="default_library" value="xil_defaultlib" description="" />
+   <keyValuePair key="designmode" value="RTL" description="" />
+   <keyValuePair key="export_simulation_activehdl" value="0" description="" />
+   <keyValuePair key="export_simulation_ies" value="0" description="" />
+   <keyValuePair key="export_simulation_modelsim" value="0" description="" />
+   <keyValuePair key="export_simulation_questa" value="0" description="" />
+   <keyValuePair key="export_simulation_riviera" value="0" description="" />
+   <keyValuePair key="export_simulation_vcs" value="0" description="" />
+   <keyValuePair key="export_simulation_xsim" value="0" description="" />
+   <keyValuePair key="implstrategy" value="Vivado Implementation Defaults" description="" />
+   <keyValuePair key="launch_simulation_activehdl" value="0" description="" />
+   <keyValuePair key="launch_simulation_ies" value="0" description="" />
+   <keyValuePair key="launch_simulation_modelsim" value="0" description="" />
+   <keyValuePair key="launch_simulation_questa" value="0" description="" />
+   <keyValuePair key="launch_simulation_riviera" value="0" description="" />
+   <keyValuePair key="launch_simulation_vcs" value="0" description="" />
+   <keyValuePair key="launch_simulation_xsim" value="0" description="" />
+   <keyValuePair key="simulator_language" value="Mixed" description="" />
+   <keyValuePair key="srcsetcount" value="1" description="" />
+   <keyValuePair key="synthesisstrategy" value="Vivado Synthesis Defaults" description="" />
+   <keyValuePair key="target_language" value="Verilog" description="" />
+   <keyValuePair key="target_simulator" value="XSim" description="" />
+   <keyValuePair key="totalimplruns" value="2" description="" />
+   <keyValuePair key="totalsynthesisruns" value="2" description="" />
+  </section>
+ </section>
+</section>
+</webTalkData>

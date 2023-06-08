@@ -1,0 +1,113 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Jan 12 20:20:29 2023
+| Host         : WIN-10J6P4VGMFJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file golden_rgmii_1gb_control_sets_placed.rpt
+| Design       : golden_rgmii_1gb
+| Device       : xc7k325t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    35 |
+|    Minimum number of control sets                        |    35 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    35 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    20 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             377 |          104 |
+| Yes          | No                    | Yes                    |              32 |           12 |
+| Yes          | Yes                   | No                     |             177 |           57 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|           Clock Signal           |                        Enable Signal                        |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------+-------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|  gmii_to_rgmii_inst0/gmii_rx_clk | sys_nrst_IBUF                                               | ram_wren_i_i_1_n_0                                |                1 |              1 |         1.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/data_counter[15]_i_2_n_0           |                                                   |                1 |              1 |         1.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/FSM_sequential_rx_state[3]_i_2_n_0 | udp_inst0/iprecieve_inst/SR[0]                    |                3 |              4 |         1.33 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/mydata[23]_i_2_n_0                 | udp_inst0/iprecieve_inst/mydata[7]_i_1_n_0        |                1 |              4 |         4.00 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/check_buffer[19]_i_1_n_0              |                                                   |                2 |              4 |         2.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/state_counter[4]_i_1_n_0           |                                                   |                3 |              5 |         1.67 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/i[4]_i_1__0_n_0                       |                                                   |                3 |              5 |         1.67 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/j[4]_i_1_n_0                          |                                                   |                2 |              5 |         2.50 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk |                                                             |                                                   |                2 |              6 |         3.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/data_o[31]_i_1_n_0                 | udp_inst0/iprecieve_inst/data_o[7]_i_1_n_0        |                4 |              8 |         2.00 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/dataout[7]_i_1_n_0                    | udp_inst0/ipsend_inst/tx_data_counter             |                6 |              8 |         1.33 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/ram_wr_addr[8]_i_1_n_0             |                                                   |                2 |              9 |         4.50 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/ram_rd_addr[8]_i_1_n_0                | udp_inst0/ipsend_inst/tx_data_counter             |                2 |              9 |         4.50 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/ip_header[6][31]_i_1_n_0              | udp_inst0/ipsend_inst/ip_header[0][15]_i_1_n_0    |                4 |             14 |         3.50 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/data_counter[15]_i_2_n_0           | udp_inst0/iprecieve_inst/data_counter[15]_i_1_n_0 |                4 |             15 |         3.75 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/rx_total_length[15]_i_1_n_0        |                                                   |                3 |             16 |         5.33 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/IP_layer[143]_i_1_n_0              |                                                   |                4 |             16 |         4.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/rx_data_length[0]_i_1_n_0          |                                                   |                4 |             16 |         4.00 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/check_buffer[15]_i_1_n_0              |                                                   |                4 |             16 |         4.00 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/ip_header[2][15]_i_1_n_0              | udp_inst0/ipsend_inst/ip_header[6][31]_i_1_n_0    |                6 |             16 |         2.67 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/tx_data_counter[0]_i_1_n_0            | udp_inst0/ipsend_inst/tx_data_counter             |                4 |             16 |         4.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/mydata[23]_i_2_n_0                 | udp_inst0/iprecieve_inst/mydata[23]_i_1_n_0       |                5 |             18 |         3.60 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/temp_h0                               |                                                   |                5 |             19 |         3.80 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/myIP_layer[135]_i_1_n_0            |                                                   |                2 |             24 |        12.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/data_o[31]_i_1_n_0                 |                                                   |                9 |             24 |         2.67 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/myUDP_layer[23]_i_1_n_0            |                                                   |                8 |             24 |         3.00 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/E[0]                                  | udp_inst0/ipsend_inst/AS[0]                       |               12 |             32 |         2.67 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | i                                                           | udp_inst0/iprecieve_inst/SR[0]                    |                9 |             32 |         3.56 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/tx_data_counter                       | udp_inst0/ipsend_inst/time_counter[31]_i_1_n_0    |                8 |             32 |         4.00 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/datain_reg[31]_i_1_n_0                |                                                   |               10 |             32 |         3.20 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/ip_header[6][31]_i_1_n_0              |                                                   |                9 |             34 |         3.78 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/temp_g0                               |                                                   |               11 |             36 |         3.27 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk |                                                             |                                                   |               13 |             36 |         2.77 |
+| ~gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/ipsend_inst/temp_c[16]_i_1_n_0                    |                                                   |               14 |             51 |         3.64 |
+|  gmii_to_rgmii_inst0/gmii_rx_clk | udp_inst0/iprecieve_inst/mymac[87]_i_1_n_0                  |                                                   |                8 |             56 |         7.00 |
++----------------------------------+-------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+
+

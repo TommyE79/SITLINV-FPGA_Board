@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 12 20:12:25 2023
+# Process ID: 7292
+# Current directory: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/ram_synth_1
+# Command line: vivado.exe -log ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram.tcl
+# Log file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/ram_synth_1/ram.vds
+# Journal file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_B_rgmii_1G/golden_rgmii_1gb.runs/ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ram.tcl -notrace

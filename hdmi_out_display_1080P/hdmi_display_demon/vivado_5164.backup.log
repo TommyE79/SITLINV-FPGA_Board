@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  7 08:01:47 2020
+# Process ID: 5164
+# Current directory: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3592 G:\K325667\hdmi_display_1080P\hdmi_display_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/vivado.log
+# Journal file: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+ERROR: [Common 17-356] Failed to install all user apps.
+start_gui
+open_project G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+INFO: [Project 1-313] Project file moved from 'F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/K325667/hdmi_display_1080P/hdmi_display_1080P/Miz_ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 852.117 ; gain = 136.000
+update_compile_order -fileset sources_1
+delete_runs "impl_1"
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 08:03:09 2020...

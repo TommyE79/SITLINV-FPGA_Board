@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2019.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7k325t_0" gui_info="dashboard1=hw_ila_1[xc7k325t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_1/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;],dashboard2=hw_ila_2[xc7k325t_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_2/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7k325t_0/hw_ila_2/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_2/Settings=ILA_SETTINGS_1;],dashboard3=hw_ila_3[xc7k325t_0/hw_ila_3/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_3/Capture Setup=ILA_CAPTURE_1;xc7k325t_0/hw_ila_3/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_3/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_3/Waveform=ILA_WAVE_1;],dashboard4=hw_vios[xc7k325t_0/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7k325t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sata_ibert/sitlinv_stlv7325_v2.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_link" gui_info="">
+    <Object name="0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->0_1_0/IBERT/Quad_115/MGT_X0Y3/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y3/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y2/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 1"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->0_1_0/IBERT/Quad_115/MGT_X0Y2/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y2/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y3/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 0"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_linkgroup" gui_info="">
+    <Object name="LINKGROUP_0" gui_info="">
+      <Attributes Attribute="LINK_HANDLE0" value="0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->0_1_0/IBERT/Quad_115/MGT_X0Y2/RX"/>
+      <Attributes Attribute="LINK_HANDLE1" value="0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->0_1_0/IBERT/Quad_115/MGT_X0Y3/RX"/>
+      <Properties Property="DESCRIPTION" value="Found Links"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

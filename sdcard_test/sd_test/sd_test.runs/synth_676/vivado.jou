@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 13 19:55:19 2023
+# Process ID: 6952
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676
+# Command line: vivado.exe -log sd_card_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_card_test.tcl
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/sd_card_test.vds
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676\vivado.jou
+#-----------------------------------------------------------
+source sd_card_test.tcl -notrace

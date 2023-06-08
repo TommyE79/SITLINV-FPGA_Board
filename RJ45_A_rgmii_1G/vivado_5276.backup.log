@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 16 12:40:49 2022
+# Process ID: 5276
+# Current directory: E:/golden_pl_prj/325/golden_rgmii_1gb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5144 E:\golden_pl_prj\325\golden_rgmii_1gb\golden_rgmii_1gb.xpr
+# Log file: E:/golden_pl_prj/325/golden_rgmii_1gb/vivado.log
+# Journal file: E:/golden_pl_prj/325/golden_rgmii_1gb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.xpr
+INFO: [Project 1-313] Project file moved from 'G:/20220610_zynq/golden_pl_prj/golden_rgmii_1gb' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:11 . Memory (MB): peak = 1102.242 ; gain = 0.000
+update_compile_order -fileset sources_1
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+copy_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1085.012 ; gain = 0.000
+impl_1_copy_1
+current_run [get_runs impl_1_copy_1]
+impl_1_copy_1
+set_property part xc7k325tffg900-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'ram' is locked:
+* Current project part 'xc7k325tffg900-2' and the part 'xc7z100ffg900-2' used to customize the IP 'ram' do not match.
+upgrade_ip -srcset ram -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  ram] -log ip_upgrade.log
+Upgrading 'ram'
+INFO: [Project 1-386] Moving file 'E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.srcs/ram/ram.xci' from fileset 'ram' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated ram to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/golden_pl_prj/325/golden_rgmii_1gb/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips ram] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram'...
+[Wed Nov 16 12:56:36 2022] Launched ram_synth_1, synth_1...
+Run output will be captured here:
+ram_synth_1: E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.runs/ram_synth_1/runme.log
+synth_1: E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.runs/synth_1/runme.log
+[Wed Nov 16 12:56:36 2022] Launched impl_1_copy_1...
+Run output will be captured here: E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.runs/impl_1_copy_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 16 13:59:20 2022...

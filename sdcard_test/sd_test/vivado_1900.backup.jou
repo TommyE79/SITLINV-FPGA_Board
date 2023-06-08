@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun  5 07:51:59 2020
+# Process ID: 1900
+# Current directory: F:/K325667/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent736 F:\K325667\sd_test\sd_test.xpr
+# Log file: F:/K325667/sd_test/vivado.log
+# Journal file: F:/K325667/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/sd_test/sd_test.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_ref -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_ref] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_ref] -no_script -sync -force -quiet
+upgrade_ip -srcset ila_0 -vlnv xilinx.com:ip:ila:6.2 [get_ips  ila_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ila_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 32
+wait_on_run synth_1
+set_property flow {Vivado Synthesis 2019} [get_runs synth_1]
+create_run synth_676 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_676]
+set_property part xc7k325tffg676-2 [current_project]
+set_property flow {Vivado Implementation 2015} [get_runs impl_2]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_2]
+reset_run clk_ref_synth_1
+reset_run ila_0_synth_1
+launch_runs synth_676 -jobs 32
+wait_on_run synth_676
+launch_runs impl_2 -jobs 32
+wait_on_run impl_2
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+wait_on_run impl_2
+open_run impl_2

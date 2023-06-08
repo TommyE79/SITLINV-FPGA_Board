@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  7 08:01:47 2020
+# Process ID: 5164
+# Current directory: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3592 G:\K325667\hdmi_display_1080P\hdmi_display_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/vivado.log
+# Journal file: G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+update_compile_order -fileset sources_1
+delete_runs "impl_1"

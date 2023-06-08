@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 14:19:38 2023
+# Process ID: 7280
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7572 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\hdmi_display_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_676/HDMI_display_Demon.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_676/HDMI_display_Demon.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_676/HDMI_display_Demon.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

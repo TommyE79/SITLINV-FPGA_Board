@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr  4 18:54:46 2023
+# Process ID: 7112
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4832 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\GTX_125M_1G_IBERT\ibert_7series_gtx_0_ex\ibert_7series_gtx_0_ex.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/GTX_125M_1G_IBERT/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+detect_hw_sio_links
+set_property TX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property RX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set xil_newScan [create_hw_sio_scan -description {Scan 0} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+set xil_newScan [create_hw_sio_scan -description {Scan 1} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+display_hw_sio_scan [get_hw_sio_scans {SCAN_1}]
+display_hw_sio_scan [get_hw_sio_scans {SCAN_0}]
+display_hw_sio_scan [get_hw_sio_scans {SCAN_1}]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sata_ibert/ETH_B/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sata_ibert/sitlinv_stlv7325_v2.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ram, cache-ID = d4b041d77d0dbd7c.
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 20:12:37 2023...

@@ -1,0 +1,608 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 13 19:55:19 2023
+# Process ID: 6952
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676
+# Command line: vivado.exe -log sd_card_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_card_test.tcl
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/sd_card_test.vds
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676\vivado.jou
+#-----------------------------------------------------------
+source sd_card_test.tcl -notrace
+Command: synth_design -top sd_card_test -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8016 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 882.344 ; gain = 177.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sd_card_test' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card_test.v:10]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_READ bound to: 1 - type: integer 
+	Parameter S_WRITE bound to: 2 - type: integer 
+	Parameter S_END bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_ref' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/.Xil/Vivado-6952-LYC/realtime/clk_ref_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_ref' (1#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/.Xil/Vivado-6952-LYC/realtime/clk_ref_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ax_debounce' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/ax_debounce.v:31]
+	Parameter N bound to: 32 - type: integer 
+	Parameter FREQ bound to: 50 - type: integer 
+	Parameter MAX_TIME bound to: 20 - type: integer 
+	Parameter TIMER_MAX_VAL bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ax_debounce' (2#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/ax_debounce.v:31]
+INFO: [Synth 8-6157] synthesizing module 'sd_card_top' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_top.v:29]
+	Parameter SPI_LOW_SPEED_DIV bound to: 248 - type: integer 
+	Parameter SPI_HIGH_SPEED_DIV bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sd_card_sec_read_write' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_sec_read_write.v:29]
+	Parameter SPI_LOW_SPEED_DIV bound to: 248 - type: integer 
+	Parameter SPI_HIGH_SPEED_DIV bound to: 0 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CMD0 bound to: 1 - type: integer 
+	Parameter S_CMD8 bound to: 2 - type: integer 
+	Parameter S_CMD55 bound to: 3 - type: integer 
+	Parameter S_CMD41 bound to: 4 - type: integer 
+	Parameter S_CMD17 bound to: 5 - type: integer 
+	Parameter S_READ bound to: 6 - type: integer 
+	Parameter S_CMD24 bound to: 7 - type: integer 
+	Parameter S_WRITE bound to: 8 - type: integer 
+	Parameter S_ERR bound to: 14 - type: integer 
+	Parameter S_WRITE_END bound to: 15 - type: integer 
+	Parameter S_READ_END bound to: 16 - type: integer 
+	Parameter S_WAIT_READ_WRITE bound to: 17 - type: integer 
+	Parameter S_CMD16 bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sd_card_sec_read_write' (3#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_sec_read_write.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sd_card_cmd' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_cmd.v:32]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WAIT bound to: 1 - type: integer 
+	Parameter S_INIT bound to: 2 - type: integer 
+	Parameter S_CMD_PRE bound to: 3 - type: integer 
+	Parameter S_CMD bound to: 4 - type: integer 
+	Parameter S_CMD_DATA bound to: 5 - type: integer 
+	Parameter S_READ_WAIT bound to: 6 - type: integer 
+	Parameter S_READ bound to: 7 - type: integer 
+	Parameter S_READ_ACK bound to: 8 - type: integer 
+	Parameter S_WRITE_TOKEN bound to: 9 - type: integer 
+	Parameter S_WRITE_DATA_0 bound to: 10 - type: integer 
+	Parameter S_WRITE_DATA_1 bound to: 11 - type: integer 
+	Parameter S_WRITE_CRC bound to: 12 - type: integer 
+	Parameter S_WRITE_SUC bound to: 13 - type: integer 
+	Parameter S_WRITE_BUSY bound to: 14 - type: integer 
+	Parameter S_WRITE_ACK bound to: 15 - type: integer 
+	Parameter S_ERR bound to: 16 - type: integer 
+	Parameter S_END bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sd_card_cmd' (4#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_cmd.v:32]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/spi_master.v:29]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter DCLK_EDGE bound to: 1 - type: integer 
+	Parameter DCLK_IDLE bound to: 2 - type: integer 
+	Parameter ACK bound to: 3 - type: integer 
+	Parameter LAST_HALF_CYCLE bound to: 4 - type: integer 
+	Parameter ACK_WAIT bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (5#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/spi_master.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'sd_card_top' (6#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card/sd_card_top.v:29]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card_test.v:190]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/.Xil/Vivado-6952-LYC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (7#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/.Xil/Vivado-6952-LYC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sd_card_top_m0'. This will prevent further optimization [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card_test.v:170]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_m0'. This will prevent further optimization [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card_test.v:190]
+INFO: [Synth 8-6155] done synthesizing module 'sd_card_test' (8#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/src/sd_card_test.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 948.875 ; gain = 243.711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 948.875 ; gain = 243.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 948.875 ; gain = 243.711
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc] for cell 'clk_sdcard_m0'
+Finished Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc] for cell 'clk_sdcard_m0'
+Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_m0'
+Finished Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_m0'
+Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_p' already exists, overwriting the previous clock with the same name. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc:22]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sd_card_test_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/constrs_1/new/sd.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sd_card_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sd_card_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1088.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1088.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref/clk_ref_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for clk_sdcard_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_card_sec_read_write'
+INFO: [Synth 8-5546] ROM "block_read_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "block_write_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_card_cmd'
+INFO: [Synth 8-5546] ROM "wr_data_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_req_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_card_test'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0000 |                            00000
+                  S_CMD0 |                             0001 |                            00001
+                  S_CMD8 |                             1100 |                            00010
+                 S_CMD55 |                             1001 |                            00011
+                 S_CMD41 |                             1011 |                            00100
+                 S_CMD16 |                             1000 |                            10010
+       S_WAIT_READ_WRITE |                             0111 |                            10001
+                 S_CMD24 |                             0010 |                            00111
+                 S_WRITE |                             0011 |                            01000
+             S_WRITE_END |                             0110 |                            01111
+                 S_CMD17 |                             1010 |                            00101
+                  S_READ |                             0100 |                            00110
+              S_READ_END |                             0101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_card_sec_read_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00110 |                            00000
+                  S_INIT |                            01001 |                            00010
+                  S_WAIT |                            01000 |                            00001
+               S_CMD_PRE |                            00100 |                            00011
+                   S_CMD |                            00101 |                            00100
+                   S_ERR |                            01010 |                            10000
+              S_CMD_DATA |                            10001 |                            00101
+                   S_END |                            00111 |                            10001
+             S_READ_WAIT |                            01011 |                            00110
+                  S_READ |                            01111 |                            00111
+              S_READ_ACK |                            10000 |                            01000
+           S_WRITE_TOKEN |                            01100 |                            01001
+          S_WRITE_DATA_0 |                            01110 |                            01010
+          S_WRITE_DATA_1 |                            01101 |                            01011
+             S_WRITE_CRC |                            00011 |                            01100
+             S_WRITE_SUC |                            00010 |                            01101
+            S_WRITE_BUSY |                            00000 |                            01110
+             S_WRITE_ACK |                            00001 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_card_cmd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               DCLK_IDLE |                              101 |                              010
+               DCLK_EDGE |                              100 |                              001
+         LAST_HALF_CYCLE |                              011 |                              100
+                     ACK |                              010 |                              011
+                ACK_WAIT |                              001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'spi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                             0000
+                  S_READ |                               01 |                             0001
+                   S_END |                               10 |                             0011
+                 S_WRITE |                               11 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_card_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  13 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 4     
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  16 Input      8 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  13 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	  13 Input      1 Bit        Muxes := 9     
+	  16 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sd_card_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 3     
+Module ax_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module sd_card_sec_read_write 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  13 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  13 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 9     
+Module sd_card_cmd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 15    
+	  16 Input      1 Bit        Muxes := 11    
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[0]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[41]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[2]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[3]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[5]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[0]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[1]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[2]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[0]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[1]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[2]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[3]' (FDPE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[4]' (FDPE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[5]' (FDPE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[6]' (FDPE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[8]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[9]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[10]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[11]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[12]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[13]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[14]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sd_card_top_m0/\sd_card_sec_read_write_m0/spi_clk_div_reg[15] )
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[47]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[46]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[3]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[4]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[5]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[6]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[8]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[9]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[10]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[11]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[12]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[13]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[14]' (FDCE) to 'sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[0]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[1]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[3]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[4]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[5]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[6]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[7]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[8]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[9]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[10]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[11]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[12]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[13]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[14]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_data_len_reg[15]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[6]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[7]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[1]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[2]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[3]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[4]' (FDCE) to 'sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sd_card_top_m0/\sd_card_sec_read_write_m0/cmd_r1_reg[5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_sdcard_m0/clk_out1' to pin 'clk_sdcard_m0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk_p'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1088.691 ; gain = 383.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_ref       |         1|
+|2     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_ref |     1|
+|2     |ila_0   |     1|
+|3     |CARRY4  |    22|
+|4     |LUT1    |     4|
+|5     |LUT2    |    29|
+|6     |LUT3    |   115|
+|7     |LUT4    |    86|
+|8     |LUT5    |    49|
+|9     |LUT6    |   123|
+|10    |FDCE    |   238|
+|11    |FDPE    |    14|
+|12    |IBUF    |     3|
+|13    |OBUF    |     7|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------+-----------------------+------+
+|      |Instance                      |Module                 |Cells |
++------+------------------------------+-----------------------+------+
+|1     |top                           |                       |   692|
+|2     |  sd_card_top_m0              |sd_card_top            |   495|
+|3     |    sd_card_cmd_m0            |sd_card_cmd            |   190|
+|4     |    sd_card_sec_read_write_m0 |sd_card_sec_read_write |   196|
+|5     |    spi_master_m0             |spi_master             |   109|
+|6     |  ax_debounce_m0              |ax_debounce            |    95|
++------+------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1092.480 ; gain = 247.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.480 ; gain = 387.316
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1103.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1103.441 ; gain = 699.957
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1103.441 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/synth_676/sd_card_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sd_card_test_utilization_synth.rpt -pb sd_card_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 13 19:56:29 2023...

@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  7 11:39:12 2023
+# Process ID: 6796
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4876 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\usb_to_uart_test\uart_test\uart_test.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.xpr
+INFO: [Project 1-313] Project file moved from 'F:/K325667/uart_test/uart_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 846.582 ; gain = 129.797
+update_compile_order -fileset sources_1
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Tue Feb  7 11:42:16 2023] Launched synth_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/synth_676/runme.log
+[Tue Feb  7 11:42:16 2023] Launched impl_2...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library dpcomm.dll, first required symbol ftdimgr_lock, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library djtg.dll, first required symbol DjtgGetPortCount, select Digilent JTAG cables cannot be supported
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 927.203 ; gain = 11.223
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/DebugChannelA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2042.828 ; gain = 1115.625
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2077.699 ; gain = 32.145
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Tue Feb  7 11:49:51 2023] Launched synth_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/synth_676/runme.log
+[Tue Feb  7 11:49:51 2023] Launched impl_2...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Tue Feb  7 11:58:10 2023] Launched synth_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/synth_676/runme.log
+[Tue Feb  7 11:58:10 2023] Launched impl_2...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Tue Feb  7 12:03:56 2023] Launched synth_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/synth_676/runme.log
+[Tue Feb  7 12:03:56 2023] Launched impl_2...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Tue Feb  7 12:12:36 2023] Launched synth_676...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/synth_676/runme.log
+[Tue Feb  7 12:12:36 2023] Launched impl_2...
+Run output will be captured here: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 12:18:55 2023...

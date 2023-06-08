@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 12 19:51:25 2023
+# Process ID: 6732
+# Current directory: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4568 G:\BaiduNetdiskDownload\K7325_676_hdmi_inout\RJ45_A_rgmii_1G\golden_rgmii_1gb.xpr
+# Log file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/vivado.log
+# Journal file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.xpr
+update_compile_order -fileset sources_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7k325tffg676-2 [current_project]
+reset_run synth_1
+reset_run ram_synth_1
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1_copy_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/impl_1_copy_1/golden_rgmii_1gb.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/impl_1_copy_1/golden_rgmii_1gb.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

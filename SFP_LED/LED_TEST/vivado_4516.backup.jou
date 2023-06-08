@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug  8 10:41:12 2022
+# Process ID: 4516
+# Current directory: E:/K325/LED_TEST/LED_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4732 E:\K325\LED_TEST\LED_TEST\LED_TEST.xpr
+# Log file: E:/K325/LED_TEST/LED_TEST/vivado.log
+# Journal file: E:/K325/LED_TEST/LED_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/K325/LED_TEST/LED_TEST/LED_TEST.xpr
+update_compile_order -fileset sources_1

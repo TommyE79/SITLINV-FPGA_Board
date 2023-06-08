@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="pcie_k7_gen2x4_synth_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1443298454">
+  <File Type="RDS-DCP" Name="pcie_k7_gen2x4.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/pcie_k7_gen2x4_synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="pcie_k7_gen2x4_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/pcie_k7_gen2x4_synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="pcie_k7_gen2x4_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="pcie_k7_gen2x4.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/pcie_k7_gen2x4_synth_1/pcie_k7_gen2x4_synth_1.psg"/>
+  <File Type="RDS-RDS" Name="pcie_k7_gen2x4.vds"/>
+  <File Type="RDS-UTIL" Name="pcie_k7_gen2x4_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pcie_k7_gen2x4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pcie_k7_gen2x4_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pcie_k7_gen2x4">
+    <File Path="$PSRCDIR/sources_1/ip/pcie_k7_gen2x4/pcie_k7_gen2x4.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pcie_k7_gen2x4"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pcie_k7_gen2x4">
+    <File Path="$PSRCDIR/sources_1/ip/pcie_k7_gen2x4/pcie_k7_gen2x4.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pcie_k7_gen2x4"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

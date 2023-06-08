@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  7 16:17:05 2023
+# Process ID: 4244
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8848 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\usb_to_uart_test\uart_test\uart_test.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:21 . Memory (MB): peak = 899.863 ; gain = 180.328
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library dpcomm.dll, first required symbol ftdimgr_lock, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library djtg.dll, first required symbol DjtgGetPortCount, select Digilent JTAG cables cannot be supported
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 921.289 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/DebugChannelA
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2030.332 ; gain = 1109.043
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 2058.816 ; gain = 23.926
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/DebugChannelA
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 17:57:37 2023...

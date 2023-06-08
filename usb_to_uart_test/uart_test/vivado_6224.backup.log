@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun  5 07:36:24 2020
+# Process ID: 6224
+# Current directory: F:/K325667/uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6172 F:\K325667\uart_test\uart_test\uart_test.xpr
+# Log file: F:/K325667/uart_test/uart_test/vivado.log
+# Journal file: F:/K325667/uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/uart_test/uart_test/uart_test.xpr
+INFO: [Project 1-313] Project file moved from 'D:/AX7325/demo/04_uart_test/uart_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'uart_test.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 869.500 ; gain = 156.008
+update_compile_order -fileset sources_1
+set_property flow {Vivado Synthesis 2019} [get_runs synth_1]
+create_run synth_676 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7k325tffg900-1
+current_run [get_runs synth_676]
+set_property part xc7k325tffg676-2 [current_project]
+set_property flow {Vivado Implementation 2015} [get_runs impl_2]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_2]
+launch_runs synth_676 -jobs 32
+[Fri Jun  5 07:43:58 2020] Launched synth_676...
+Run output will be captured here: F:/K325667/uart_test/uart_test/uart_test.runs/synth_676/runme.log
+launch_runs impl_2 -jobs 32
+[Fri Jun  5 07:46:19 2020] Launched impl_2...
+Run output will be captured here: F:/K325667/uart_test/uart_test/uart_test.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1895.402 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1895.402 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1895.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 2126.770 ; gain = 1216.926
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Fri Jun  5 07:50:19 2020] Launched impl_2...
+Run output will be captured here: F:/K325667/uart_test/uart_test/uart_test.runs/impl_2/runme.log
+delete_runs "impl_1"
+delete_runs "synth_1"
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/K325667/uart_test/uart_test/uart_test.runs/synth_1
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 07:51:53 2020...

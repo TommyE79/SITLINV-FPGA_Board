@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="pcie_k7_gen2x4_synth_1" LaunchDir="S:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/gvi_k7x4gen2.runs/pcie_k7_gen2x4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

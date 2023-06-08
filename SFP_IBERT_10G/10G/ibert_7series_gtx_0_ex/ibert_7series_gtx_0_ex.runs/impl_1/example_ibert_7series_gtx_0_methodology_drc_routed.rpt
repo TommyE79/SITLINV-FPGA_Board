@@ -1,0 +1,123 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jan 12 19:14:18 2023
+| Host         : LYC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file example_ibert_7series_gtx_0_methodology_drc_routed.rpt -pb example_ibert_7series_gtx_0_methodology_drc_routed.pb -rpx example_ibert_7series_gtx_0_methodology_drc_routed.rpx
+| Design       : example_ibert_7series_gtx_0
+| Device       : xc7k325tffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 17
++-----------+------------------+-------------------------------------------------+------------+
+| Rule      | Severity         | Description                                     | Violations |
++-----------+------------------+-------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                     | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                    | 14         |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain | 1          |
+| TIMING-9  | Warning          | Unknown CDC Logic                               | 1          |
++-----------+------------------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_ibert_core/inst/U_ICON/iDATA_CMD_reg/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[1].u_q/CH[0].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[1].u_q/CH[0].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[1].u_q/CH[0].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[1].u_q/CH[1].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[1].u_q/CH[1].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[1].u_q/CH[1].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[1].u_q/CH[2].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[1].u_q/CH[2].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[1].u_q/CH[2].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/QUAD[1].u_q/CH[3].u_ch/U_PATTERN_HANDLER/forward_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/QUAD[1].u_q/CH[3].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[0]/PRE, u_ibert_core/inst/QUAD[1].u_q/CH[3].u_ch/U_PATTERN_HANDLER/u_lev/out_i_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ngwrdrst.grst.g7serrst.rst_wr_reg1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg1_reg/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg2_reg/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg1_reg/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[0]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[10]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[11]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[12]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[13]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[14]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[15]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[1]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[2]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[3]/CLR, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_reg_in_reg[4]/CLR (the first 15 of 40 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdb_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdb_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell u_ibert_core/inst/U_ICON/U_CMD/iTDO_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ibert_core/inst/U_ICON/iDATA_CMD_reg/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[10]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[11]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[12]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[13]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[14]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[15]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[6]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[7]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[8]/CLR, u_ibert_core/inst/U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X74Y303 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ibert_core/inst/UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+

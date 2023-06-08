@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 15:12:08 2023
+# Process ID: 6928
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/impl_676
+# Command line: vivado.exe -log HDMI_display_Demon.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HDMI_display_Demon.tcl -notrace
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/impl_676/HDMI_display_Demon.vdi
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/impl_676\vivado.jou
+#-----------------------------------------------------------
+source HDMI_display_Demon.tcl -notrace

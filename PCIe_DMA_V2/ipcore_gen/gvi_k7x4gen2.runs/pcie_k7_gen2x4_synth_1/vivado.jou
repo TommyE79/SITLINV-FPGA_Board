@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sat Sep 26 22:06:12 2015
+# Process ID: 7164
+# Log file: S:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen/gvi_k7x4gen2.runs/pcie_k7_gen2x4_synth_1/pcie_k7_gen2x4.vds
+# Journal file: S:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen/gvi_k7x4gen2.runs/pcie_k7_gen2x4_synth_1\vivado.jou
+#-----------------------------------------------------------
+source pcie_k7_gen2x4.tcl

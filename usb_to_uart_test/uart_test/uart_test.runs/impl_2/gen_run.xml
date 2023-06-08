@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7k325tffg676-2" LaunchTime="1675743155">
+  <File Type="BITSTR-BMM" Name="uart_test_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="uart_test_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="uart_test_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="uart_test_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="uart_test.tcl"/>
+  <File Type="OPT-TIMING" Name="uart_test_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="uart_test_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="uart_test_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="uart_test_reports.tcl"/>
+  <File Type="OPT-DRC" Name="uart_test_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="uart_test.hwdef"/>
+  <File Type="PWROPT-DCP" Name="uart_test_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="uart_test_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="uart_test_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="uart_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="uart_test_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="uart_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="uart_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="uart_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="uart_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="uart_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uart_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="uart_test.bgn"/>
+  <File Type="PLACE-TIMING" Name="uart_test_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_test_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="uart_test.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="uart_test_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="uart_test_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="uart_test_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="uart_test.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="uart_test_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="uart_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="uart_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="uart_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="uart_test_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="uart_test.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="uart_test_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="uart_test.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="uart_test_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="uart_test_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="uart_test.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="uart_test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="uart_test_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="uart_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="uart_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="uart_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="uart_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="uart_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="uart_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="uart_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="uart_test_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="uart_test_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="uart_test_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_test_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="uart_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="uart_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="uart_test_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="uart_test_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="uart_test_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="uart_test.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="uart_test_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="uart_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="uart_test.nky"/>
+  <File Type="BG-DRC" Name="uart_test.drc"/>
+  <File Type="RDI-RDI" Name="uart_test.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/src/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uart_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uart_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/constrs_1/new/uart.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 19:56:10 2023
+# Process ID: 4188
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/top.vdi
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

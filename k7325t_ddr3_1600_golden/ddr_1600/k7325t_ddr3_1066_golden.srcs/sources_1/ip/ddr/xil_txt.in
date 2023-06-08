@@ -1,0 +1,24 @@
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE TRUE
+SET_PREFERENCE ipi_mode no
+SET_PREFERENCE is_ip_locked false
+SET_PREFERENCE devicefamily kintex7
+SET_PREFERENCE device xc7k325t
+SET_PREFERENCE speedgrade -2
+SET_PREFERENCE package ffg676
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE outputdirectory d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/.Xil/Vivado-6416-LYC/coregen/ddr/_tmp/
+SET_PREFERENCE subworkingdirectory d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/.Xil/Vivado-6416-LYC/coregen/ddr/_tmp/
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE tool vivado
+SET_PREFERENCE compnamestatus 0
+SET_PARAMETER component_name ddr
+SET_PARAMETER xml_input_file D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_b.prj
+SET_PARAMETER data_dir_path d:/vivado2019/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
+SET_CORE_VERSION 4.2
+SET_CORE_VLNV xilinx.com:ip:mig_7series:4.2
+SET_CORE_PATH d:/vivado2019/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2
+SET_CORE_DATASHEET d:/vivado2019/Vivado/2019.1/data/ip/xilinx/mig_7series_v4_2/data/docs/ds176_7series_MIS.pdf

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 11 07:12:32 2020
+# Process ID: 10908
+# Current directory: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5700 F:\K325667\kintex7_2020_dev_board-master\kintex7_2020_dev_board-master\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden.xpr
+# Log file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/vivado.log
+# Journal file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 843.906 ; gain = 135.156
+update_compile_order -fileset sources_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr'...
+[Fri Sep 11 07:13:56 2020] Launched ddr_synth_1, synth_1...
+Run output will be captured here:
+ddr_synth_1: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.runs/ddr_synth_1/runme.log
+synth_1: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.runs/synth_1/runme.log
+[Fri Sep 11 07:13:57 2020] Launched impl_1...
+Run output will be captured here: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1151.855 ; gain = 280.852
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 07:28:49 2020...

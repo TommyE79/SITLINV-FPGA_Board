@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 15:07:34 2023
+# Process ID: 6824
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/50/hdmi_display_demon/hdmi_display_demon.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

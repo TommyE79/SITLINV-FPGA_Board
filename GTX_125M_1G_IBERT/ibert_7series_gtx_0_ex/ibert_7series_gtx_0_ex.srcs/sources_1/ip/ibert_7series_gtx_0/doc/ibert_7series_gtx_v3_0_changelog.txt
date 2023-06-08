@@ -1,0 +1,172 @@
+2019.1:
+ * Version 3.0 (Rev. 18)
+ * General: Added support for automotive Kintex device
+
+2018.3.1:
+ * Version 3.0 (Rev. 17)
+ * No changes
+
+2018.3:
+ * Version 3.0 (Rev. 17)
+ * No changes
+
+2018.2:
+ * Version 3.0 (Rev. 17)
+ * No changes
+
+2018.1:
+ * Version 3.0 (Rev. 17)
+ * Bug Fix: updated linerates as per ds182.
+
+2017.4:
+ * Version 3.0 (Rev. 16)
+ * No changes
+
+2017.3:
+ * Version 3.0 (Rev. 16)
+ * No changes
+
+2017.2:
+ * Version 3.0 (Rev. 16)
+ * No changes
+
+2017.1:
+ * Version 3.0 (Rev. 16)
+ * Changed default value of RXDFEXYDEN to 1.
+ * Revision change in one or more subcores
+
+2016.4:
+ * Version 3.0 (Rev. 15)
+ * Added synchronizer for reset signal in accumulator logic
+ * Revision change in one or more subcores
+
+2016.3:
+ * Version 3.0 (Rev. 14)
+ * Added support for xc7k70tfbv485 device
+ * Revision change in one or more subcores
+
+2016.2:
+ * Version 3.0 (Rev. 13)
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 3.0 (Rev. 12)
+ * Removed redudant rxoutclkfabric and txoutclkfabric pins
+ * Added a new BUFG instance for the input of MMCM clock input for system clock divider
+ * Revision change in one or more subcores
+
+2015.4.2:
+ * Version 3.0 (Rev. 11)
+ * No changes
+
+2015.4.1:
+ * Version 3.0 (Rev. 11)
+ * No changes
+
+2015.4:
+ * Version 3.0 (Rev. 11)
+ * Added device support for Zynq Extensions to include lower power additions Zynq 7Z100.
+ * Revision change in one or more subcores
+
+2015.3:
+ * Version 3.0 (Rev. 10)
+ * Updated some procs for REFCLK selection updation.
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+
+2015.2.1:
+ * Version 3.0 (Rev. 9)
+ * No changes
+
+2015.2:
+ * Version 3.0 (Rev. 9)
+ * Fixed issue of REFCLK selection getting set to default if refclk order is changed from bottom to top.
+
+2015.1:
+ * Version 3.0 (Rev. 8)
+ * Added Device Support for new FBV and FFV packages
+
+2014.4.1:
+ * Version 3.0 (Rev. 7)
+ * No changes
+
+2014.4:
+ * Version 3.0 (Rev. 7)
+ * Added Device Support for Software Virtual Devices xc7z035* and low power speed grade -2LI.
+ * Encrypted source files are concatenated together to reduce the number of files and to reduce simulator compile time
+
+2014.3:
+ * Version 3.0 (Rev. 6)
+ * Added Device Support for xq7v585trf1157-1I part
+
+2014.2:
+ * Version 3.0 (Rev. 5)
+ * Added Device Support for new Zynq Automative and Defence grade parts
+ * Fixed TIMING DRC violations in IBERT IP and added ASYNC_REG property on register which has double synchronizer in CDC paths
+
+2014.1:
+ * Version 3.0 (Rev. 4)
+ * Repackaged to improve internal automation, no functional changes
+
+2013.4:
+ * Version 3.0 (Rev. 3)
+ * No Changes
+
+2013.3:
+ * Version 3.0 (Rev. 2)
+ * Added new device support for xc7z030fbg484.
+
+2013.2:
+ * Version 3.0 (Rev. 1)
+ * Added new device support for qvirtex7, kintex7l, qzynq and zynq-100 families.
+ * Changed FB484 package of XQ7Z030 to RB484.
+
+2013.1:
+ * Version 3.0
+ * Native Vivado Release
+ * There have been no functional or interface changes to this IP.  The version number has changed to support unique versioning in Vivado starting with 2013.1.
+
+(c) Copyright 2000 - 2019 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

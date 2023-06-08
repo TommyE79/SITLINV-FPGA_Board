@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 08:35:12 2020
+# Process ID: 1912
+# Current directory: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4340 F:\K325667\PCIe_DMA_V2_5031_spix4_ok\PCIe_DMA_V2_5031_spix4_ok\PCIE_DMA_Demo.xpr
+# Log file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/vivado.log
+# Journal file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 32
+wait_on_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_run impl_1
+open_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 "F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top.bit" } -checksum -force -disablebitswap -file "F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/K325_PCIEX4"

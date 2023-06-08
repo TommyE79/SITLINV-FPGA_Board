@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug  6 06:39:31 2020
+# Process ID: 6320
+# Current directory: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1272 F:\K325667\hdmi_display_1080P\hdmi_display_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/vivado.log
+# Journal file: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/K325667/hdmi_display_1080P/hdmi_display_1080P/Miz_ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 877.020 ; gain = 162.781
+update_compile_order -fileset sources_1
+reset_run hdmi_display_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 32
+WARNING: [Project 1-577] IP run hdmi_display_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci
+
+WARNING: [Project 1-577] IP run hdmi_display_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+[Thu Aug  6 06:43:59 2020] Launched hdmi_display_0_synth_1...
+Run output will be captured here: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/hdmi_display_0_synth_1/runme.log
+[Thu Aug  6 06:43:59 2020] Launched synth_1...
+Run output will be captured here: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/runme.log
+launch_runs impl_676 -jobs 32
+[Thu Aug  6 06:48:09 2020] Launched impl_676...
+Run output will be captured here: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_676/runme.log
+open_run impl_676
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.145 . Memory (MB): peak = 1932.145 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1932.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1932.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:34 . Memory (MB): peak = 2185.422 ; gain = 1220.215
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_runs impl_676 -to_step write_bitstream -jobs 32
+[Thu Aug  6 06:51:58 2020] Launched impl_676...
+Run output will be captured here: F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_676/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  6 06:54:35 2020...

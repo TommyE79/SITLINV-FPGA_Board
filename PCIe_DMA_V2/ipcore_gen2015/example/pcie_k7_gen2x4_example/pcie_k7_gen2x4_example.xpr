@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.2 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="5" Path="s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/example/pcie_k7_gen2x4_example/pcie_k7_gen2x4_example.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="d7baf7821bf8476fa01f856a142acb0f"/>
+    <Option Name="Part" Val="xc7k325tffg676-2"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="EnableCoreContainerForIPI" Val="FALSE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/EP_MEM.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/EP_MEM.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO_EP_MEM_ACCESS.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO_EP_MEM_ACCESS.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO_RX_ENGINE.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO_RX_ENGINE.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO_TX_ENGINE.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO_TX_ENGINE.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO_EP.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO_EP.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO_TO_CTRL.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO_TO_CTRL.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/pcie_k7_gen2x4/pcie_k7_gen2x4.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/pcie_k7_gen2x4.xci"/>
+          <Attr Name="ImportTime" Val="1443298443"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="sim/pcie_k7_gen2x4.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie2_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gtx_cpllpd_ovrd.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gtp_cpllpd_ovrd.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gt_common.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gt_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gt_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gt_rx_valid_filter_7x.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_pipe_pipeline.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_pipe_misc.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_pipe_lane.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_brams_7x.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_bram_top_7x.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_bram_7x.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pcie_7x.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_tx.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_tx_thrtl_ctl.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_tx_pipeline.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_rx.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4_funcsim.vhdl"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4_funcsim.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4_stub.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4.dcp"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="synth/pcie_k7_gen2x4_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4-PCIE_X0Y0.xdc"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="synth/pcie_k7_gen2x4.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_rx_pipeline.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_axi_basic_rx_null_gen.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4.vho"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_rxeq_scan.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_qpll_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_qpll_reset.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_qpll_drp.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_user.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gtp_pipe_reset.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gtp_pipe_drp.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_gtp_pipe_rate.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_sync.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_reset.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_rate.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_eq.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_core_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="source/pcie_k7_gen2x4_pipe_drp.v"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="doc/pcie_7x_v3_1_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="pcie_k7_gen2x4.xci" FileRelPathName="pcie_k7_gen2x4.xml"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/PIO.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/PIO.vhd"/>
+          <Attr Name="ImportTime" Val="1443298543"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/support/pcie_k7_gen2x4_pipe_clock.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/support/pcie_k7_gen2x4_pipe_clock.v"/>
+          <Attr Name="ImportTime" Val="1443298545"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/pcie_app_7x.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/pcie_app_7x.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/support/pcie_k7_gen2x4_support.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/support/pcie_k7_gen2x4_support.vhd"/>
+          <Attr Name="ImportTime" Val="1443298545"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/example_design/xilinx_pcie_2_1_ep_7x.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/xilinx_pcie_2_1_ep_7x.vhd"/>
+          <Attr Name="ImportTime" Val="1443298544"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/pcie_k7_gen2x4/hierarchy.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/hierarchy.txt"/>
+          <Attr Name="ImportTime" Val="1443298545"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="xilinx_pcie_2_1_ep_7x"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/example_design/xilinx_pcie_7x_ep_x4g2.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/example_design/xilinx_pcie_7x_ep_x4g2.xdc"/>
+          <Attr Name="ImportTime" Val="1443298545"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/test_interface.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/test_interface.vhd"/>
+          <Attr Name="ImportTime" Val="1443298548"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/tests/tests.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/tests/tests.vhd"/>
+          <Attr Name="ImportTime" Val="1443298548"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pci_exp_usrapp_cfg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pci_exp_usrapp_cfg.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pci_exp_usrapp_pl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pci_exp_usrapp_pl.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pci_exp_usrapp_rx.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pci_exp_usrapp_rx.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pci_exp_usrapp_tx.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pci_exp_usrapp_tx.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/functional/sys_clk_gen.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/functional/sys_clk_gen.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pcie_axi_trn_bridge.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pcie_axi_trn_bridge.vhd"/>
+          <Attr Name="ImportTime" Val="1443298547"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/pcie_2_1_rport_7x.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/pcie_2_1_rport_7x.vhd"/>
+          <Attr Name="ImportTime" Val="1443298547"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/functional/sys_clk_gen_ds.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/functional/sys_clk_gen_ds.vhd"/>
+          <Attr Name="ImportTime" Val="1443298546"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/dsport/xilinx_pcie_2_1_rport_7x.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/dsport/xilinx_pcie_2_1_rport_7x.vhd"/>
+          <Attr Name="ImportTime" Val="1443298547"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/simulation/functional/board.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/simulation/functional/board.vhd"/>
+          <Attr Name="ImportTime" Val="1443298547"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="board"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7k325tffg676-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg676-2" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+</Project>

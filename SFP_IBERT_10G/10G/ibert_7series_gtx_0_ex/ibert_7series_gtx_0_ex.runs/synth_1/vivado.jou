@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 19:01:19 2023
+# Process ID: 1448
+# Current directory: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1
+# Command line: vivado.exe -log example_ibert_7series_gtx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source example_ibert_7series_gtx_0.tcl
+# Log file: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1/example_ibert_7series_gtx_0.vds
+# Journal file: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source example_ibert_7series_gtx_0.tcl -notrace

@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 13 19:46:08 2023
+# Process ID: 3848
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6048 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\sdcard_test\sd_test\sd_test.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.xpr
+update_compile_order -fileset sources_1
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ila_m0"}]]
+set_property PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 "D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit" } -checksum -force -disablebitswap -file "D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sdcard.mcs"
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [lindex [get_cfgmem_parts {s25fl256sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.FILES [list "D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sdcard.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.PRM_FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sdcard.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7k325t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7k325t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+endgroup

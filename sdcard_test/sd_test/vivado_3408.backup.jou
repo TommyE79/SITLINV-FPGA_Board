@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 31 18:16:55 2020
+# Process ID: 3408
+# Current directory: F:/K325/sd_test/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2268 F:\K325\sd_test\sd_test\sd_test.xpr
+# Log file: F:/K325/sd_test/sd_test/vivado.log
+# Journal file: F:/K325/sd_test/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325/sd_test/sd_test/sd_test.xpr
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_ref -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_ref] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_ref] -no_script -sync -force -quiet
+upgrade_ip -srcset ila_0 -vlnv xilinx.com:ip:ila:6.2 [get_ips  ila_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ila_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ila_m0"}]]
+set_property PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

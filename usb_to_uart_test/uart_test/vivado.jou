@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  7 16:17:05 2023
+# Process ID: 4244
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8848 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\usb_to_uart_test\uart_test\uart_test.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

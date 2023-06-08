@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Sep 26 22:15:49 2015
+# Process ID: 4192
+# Log file: s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/example/pcie_k7_gen2x4_example/vivado.log
+# Journal file: s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/example/pcie_k7_gen2x4_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/pcie_k7_gen2x4_ex.tcl
+# set srcIpDir "s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4"
+# create_project -name pcie_k7_gen2x4_example -force
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 's:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/example/pcie_k7_gen2x4_example'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+# set_property part xc7k325tffg676-2 [current_project]
+# set_property target_language vhdl [current_project]
+# set_property simulator_language MIXED [current_project]
+# set_property enable_core_container false [current_project]
+# set returnCode 0
+# import_ip -files [list [file join $srcIpDir pcie_k7_gen2x4.xci]] -name pcie_k7_gen2x4
+# reset_target {example} [get_ips pcie_k7_gen2x4]
+WARNING: [Vivado 12-4104] The example target will be deprecated in a future release.
+# proc _filter_supported_targets {targets ip} {
+#   set res {}
+#   set all [get_property SUPPORTED_TARGETS $ip]
+#   foreach target $targets {
+#     lappend res {*}[lsearch -all -inline -nocase $all $target]
+#   }
+#   return $res
+# }
+# generate_target [_filter_supported_targets {instantiation_template synthesis simulation implementation shared_logic} [get_ips pcie_k7_gen2x4]] [get_ips pcie_k7_gen2x4]
+INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'pcie_k7_gen2x4'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'pcie_k7_gen2x4'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'pcie_k7_gen2x4'. Target already exists and is up to date.
+# add_files -scan_for_includes -quiet -fileset [current_fileset] \
+#   [list [file join $srcIpDir example_design/PIO.vhd]] \
+#   [list [file join $srcIpDir example_design/EP_MEM.vhd]] \
+#   [list [file join $srcIpDir example_design/PIO_EP_MEM_ACCESS.vhd]] \
+#   [list [file join $srcIpDir example_design/PIO_EP.vhd]] \
+#   [list [file join $srcIpDir example_design/PIO_RX_ENGINE.vhd]] \
+#   [list [file join $srcIpDir example_design/PIO_TO_CTRL.vhd]] \
+#   [list [file join $srcIpDir example_design/PIO_TX_ENGINE.vhd]] \
+#   [list [file join $srcIpDir example_design/pcie_app_7x.vhd]] \
+#   [list [file join $srcIpDir example_design/xilinx_pcie_2_1_ep_7x.vhd]] \
+#   [list [file join $srcIpDir example_design/support/pcie_k7_gen2x4_support.vhd]] \
+#   [list [file join $srcIpDir example_design/support/pcie_k7_gen2x4_pipe_clock.v]]
+# add_files -quiet -fileset [current_fileset] \
+#   [list [file join $srcIpDir hierarchy.txt]]
+# add_files -quiet -fileset [current_fileset -constrset] \
+#   [list [file join $srcIpDir example_design/xilinx_pcie_7x_ep_x4g2.xdc]]
+# if { [catch {current_fileset -simset} exc] } { create_fileset -simset sim_1 }
+# add_files -quiet -scan_for_includes -fileset [current_fileset -simset] \
+#   [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_cfg.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_pl.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_rx.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_tx.vhd]] \
+#   [list [file join $srcIpDir simulation/functional/sys_clk_gen_ds.vhd]] \
+#   [list [file join $srcIpDir simulation/functional/sys_clk_gen.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/pcie_axi_trn_bridge.vhd]] \
+#   [list [file join $srcIpDir simulation/functional/board.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/pcie_2_1_rport_7x.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/xilinx_pcie_2_1_rport_7x.vhd]] \
+#   [list [file join $srcIpDir simulation/dsport/test_interface.vhd]] \
+#   [list [file join $srcIpDir simulation/tests/tests.vhd]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_cfg.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_pl.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_rx.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pci_exp_usrapp_tx.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/functional/sys_clk_gen_ds.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/functional/sys_clk_gen.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pcie_axi_trn_bridge.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/functional/board.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/pcie_2_1_rport_7x.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/xilinx_pcie_2_1_rport_7x.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/dsport/test_interface.vhd]]]
+# set_property USED_IN_SYNTHESIS false [get_files [list [file join $srcIpDir simulation/tests/tests.vhd]]]
+# import_files
+# set_property TOP [lindex [find_top] 0] [current_fileset]
+# update_compile_order -fileset [current_fileset]
+# update_compile_order -fileset [current_fileset -simset]
+# set dfile "s:/workspace/CXK7T360/XC7K325T-2/PCIe_DMA/ipcore_gen2015/gvi_k7x4gen2.srcs/sources_1/ip/pcie_k7_gen2x4/oepdone.txt"
+# set doneFile [open $dfile w]
+# puts $doneFile "Open Example Project DONE"
+# close $doneFile
+# if { $returnCode != 0 } {
+#   error "Problems were encountered while executing the example design script, please review the log files."
+# }
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 22:16:09 2015...

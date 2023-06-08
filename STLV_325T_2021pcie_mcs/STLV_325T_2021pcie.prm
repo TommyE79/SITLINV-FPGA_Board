@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xDDDC5E1B
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                                              Checksum
+0x00000000    0x0021B467    Jun 25 13:20:57 2021    F:/K325/STLV_325pcie_2021/k7325_PCIe_DMA_V2/k7325_PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top.bit    0x016F11B3
+File Checksum Total                                                                                                                                                                      0x016F11B3

@@ -1,0 +1,114 @@
+2014.2:
+ * Version 3.0 (Rev. 2)
+ * Added AZynq7030 device support
+ * Added QArtix 50t device support
+ * Enabled PIPE simulation and External PIPE interface support only when shared logic option Shared Logic (clocking) in example design is selected
+
+2014.1:
+ * Version 3.0 (Rev. 1)
+ * Added Zynq7015 device support
+ * Added 35t,50t and 75t support for Artix7l and Aartix7 devices
+ * Added cpg236 and csg325 packages support for Artix7 devices
+ * Enabled Tandem PROM configuration support for Zynq 7030 and for Zynq7045 devices
+ * Enabled Tandem Configuration support for Kintex 420T device
+ * Changed the directory structure of the core without affecting the design hierarchy
+
+2013.4:
+ * Version 3.0
+ * Added XC7Z200TSBG484 device support
+ * Added support Artix7 35t, 50t and 75t devices
+ * Added port level enablement for icap and startup signal interfaces
+ * Added 3 new ports - pipe_rxstatus, pipe_eyescandataerror and pipe_dmonitordout to the transceiver debug interface
+ * Added logic to power down CPLL until it is required during the PCIe link bring-up
+
+2013.3:
+ * Version 2.2
+ * Reduced Warnings in Simulations
+ * Reduced Warnings in Synthesis
+ * Implemented Shared Logic for Clocking and Transeciver GT Common blocks to include either in core or example design
+ * Implemented Tarnsceiver Core Debug interface. Brought the debug signals to the port level
+ * Brought the Ext GT DRP signals upto the core top port level
+ * Added support for IPI integrator
+ * Updated xdc to match IP hierarchy
+ * Added support for Cadence IES and Synopsys VCS Simulators
+ * Added support for upgrade from previous versions
+ * Added support for Zynq 7100 device
+ * Added new pages Shared Logic and Core interface Parameters in GUI in Advanced mode
+ * Added Enablement of PCIe DRP interface and made the option true by default
+ * PCIe Sideband interface is broken into several smaller interfaces to connect with DMA IP in IPI
+ * Added support for External PIPE interface mode
+
+2013.2:
+ * Version 2.1
+ * Enhancements in the Tandem Logic - added STARTUP Premitive and new ports related to this premitive (static ports)
+ * Removed the redundant blocks related to Tandem configuration logic
+ * Added AER_CAP_ECRC_GEN_CAPABLE parameter in XGUI
+ * Added option to select the Internal or external clocking module (Parameter PCIE_EXT_CLK)
+ * Marked Artix7 (fgg484 and fbg484) and Zynq devices as production. Added GES_and_Production option for Silicon_Rev parameter. Updated the Auto-Upgrade Script
+ * Added support for Artix7 and Kintex7 Lowvoltage family
+ * Shortened the example design xdc file name (PG updated)
+ * IPI Level 0 Support
+ * Added OOC flow support
+ * Fixed CDC issues with GT wrappers
+ * Removed the BETA tag for Tandem PROM and Tandem PCIe options
+ * For x8g1, 128-bit interface width configuration, Removed the optional 250MHz. Updated the Auto-upgrade script
+
+2013.1:
+ * Version 2.0
+ * Lower case ports for Verilog
+ * Added Zynq Support
+ * Fixed Reset Sequence issue with GTPs
+ * Fixed TXOUTCLK flatline issue
+ * Fixed the issue with GUI to select the optional frequency for g2x4, 128-bit configuration. Now the selection for 250Mhz optional frequency is removed as it is not supported configuration
+ * Fixed XSIM issues with VHDL version of the core
+ * Changed upper case portlevel signals to lower case (clocking interface for partial re-configuration and ICAP interface)
+ * Added pipe_mmcm_rst_n signal at the port level as input in the core top file.
+ * All Kintex devices, Virtex 2000T, Artix 100t/ffg676, 200T/fbg676,ffg1156 are marked as Production. Option is added in GUI to select GES_and_Production
+ * Tandem Configuration - The option is enabled independent of the Dev board selection for Kintex 325/ffg900 and Virtex 485/ffg1761/PCIe Block X1Y0
+ * Tandem Confguration - Create Bin files for stage 2, Back Up & restore of bitstream generation settings
+
+(c) Copyright 2002 - 2014 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

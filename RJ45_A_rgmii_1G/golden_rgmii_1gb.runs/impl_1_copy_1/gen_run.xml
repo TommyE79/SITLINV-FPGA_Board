@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1_copy_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1673524693">
+  <File Type="BITSTR-BMM" Name="golden_rgmii_1gb_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="golden_rgmii_1gb_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="golden_rgmii_1gb_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="golden_rgmii_1gb_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="golden_rgmii_1gb.tcl"/>
+  <File Type="OPT-TIMING" Name="golden_rgmii_1gb_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="golden_rgmii_1gb_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="golden_rgmii_1gb_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="golden_rgmii_1gb_reports.tcl"/>
+  <File Type="OPT-DRC" Name="golden_rgmii_1gb_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="golden_rgmii_1gb.hwdef"/>
+  <File Type="PWROPT-DCP" Name="golden_rgmii_1gb_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="golden_rgmii_1gb_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="golden_rgmii_1gb_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="golden_rgmii_1gb_placed.dcp"/>
+  <File Type="PLACE-IO" Name="golden_rgmii_1gb_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="golden_rgmii_1gb_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="golden_rgmii_1gb_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="golden_rgmii_1gb_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="golden_rgmii_1gb_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="golden_rgmii_1gb_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="golden_rgmii_1gb_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="golden_rgmii_1gb_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="golden_rgmii_1gb_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="golden_rgmii_1gb.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="golden_rgmii_1gb_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="golden_rgmii_1gb_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="golden_rgmii_1gb_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="golden_rgmii_1gb.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="golden_rgmii_1gb_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="golden_rgmii_1gb_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="golden_rgmii_1gb_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="golden_rgmii_1gb_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="golden_rgmii_1gb_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="golden_rgmii_1gb_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="golden_rgmii_1gb_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="golden_rgmii_1gb.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="golden_rgmii_1gb_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="golden_rgmii_1gb_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="golden_rgmii_1gb_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="golden_rgmii_1gb_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="golden_rgmii_1gb_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="golden_rgmii_1gb_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="golden_rgmii_1gb_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="golden_rgmii_1gb_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="golden_rgmii_1gb_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="golden_rgmii_1gb_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="golden_rgmii_1gb_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="golden_rgmii_1gb_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="golden_rgmii_1gb_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="golden_rgmii_1gb_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="golden_rgmii_1gb_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="golden_rgmii_1gb_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="golden_rgmii_1gb_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="golden_rgmii_1gb_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="golden_rgmii_1gb_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="golden_rgmii_1gb_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="golden_rgmii_1gb_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="golden_rgmii_1gb.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="golden_rgmii_1gb_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="golden_rgmii_1gb.rbt"/>
+  <File Type="BITSTR-NKY" Name="golden_rgmii_1gb.nky"/>
+  <File Type="PDI-FILE" Name="golden_rgmii_1gb.pdi"/>
+  <File Type="RCFI_FILE" Name="golden_rgmii_1gb.rcfi"/>
+  <File Type="CFI_FILE" Name="golden_rgmii_1gb.cfi"/>
+  <File Type="RNPI_FILE" Name="golden_rgmii_1gb.rnpi"/>
+  <File Type="NPI_FILE" Name="golden_rgmii_1gb.npi"/>
+  <File Type="RBD_FILE" Name="golden_rgmii_1gb.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="golden_rgmii_1gb.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="golden_rgmii_1gb.sysdef"/>
+  <File Type="BG-BGN" Name="golden_rgmii_1gb.bgn"/>
+  <File Type="BG-DRC" Name="golden_rgmii_1gb.drc"/>
+  <File Type="RDI-RDI" Name="golden_rgmii_1gb.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/crc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gmii_to_rgmii.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/iprecieve.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/ipsend.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/udp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/golden_rgmii_1gb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="golden_rgmii_1gb"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/golden_rgmii_1gb.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/golden_rgmii_1gb.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ram"/>
+</GenRun>

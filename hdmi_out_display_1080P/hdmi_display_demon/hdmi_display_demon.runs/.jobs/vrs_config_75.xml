@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hdmi_display_0_synth_1" LaunchDir="F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/hdmi_display_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="F:/K325667/hdmi_display_1080P/hdmi_display_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hdmi_display_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

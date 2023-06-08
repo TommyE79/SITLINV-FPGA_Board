@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 12 19:00:01 2023
+# Process ID: 7036
+# Current directory: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex
+# Command line: vivado.exe -notrace -source d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/project_1/project_1.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl
+# Log file: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/vivado.log
+# Journal file: d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/project_1/project_1.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+detect_hw_sio_links
+set_property TX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property RX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set xil_newScan [create_hw_sio_scan -description {Scan 0} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+set xil_newScan [create_hw_sio_scan -description {Scan 1} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_IBERT/10G/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property TX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property RX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set xil_newScan [create_hw_sio_scan -description {Scan 2} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+set xil_newScan [create_hw_sio_scan -description {Scan 3} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->localhost:3121/xilinx_tcf/Xilinx/DebugChannelA/0_1_0/IBERT/Quad_115/MGT_X0Y2/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]

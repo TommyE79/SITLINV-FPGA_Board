@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 31 22:59:28 2019
+# Process ID: 6644
+# Current directory: F:/BaiduYunDownload/AX7325/AX7325_CD_20181030/CD/DEMO/demo/04_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1432 F:\BaiduYunDownload\AX7325\AX7325_CD_20181030\CD\DEMO\demo\04_uart_test\uart_test\uart_test.xpr
+# Log file: F:/BaiduYunDownload/AX7325/AX7325_CD_20181030/CD/DEMO/demo/04_uart_test/uart_test/vivado.log
+# Journal file: F:/BaiduYunDownload/AX7325/AX7325_CD_20181030/CD/DEMO/demo/04_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/BaiduYunDownload/AX7325/AX7325_CD_20181030/CD/DEMO/demo/04_uart_test/uart_test/uart_test.xpr
+update_compile_order -fileset sources_1

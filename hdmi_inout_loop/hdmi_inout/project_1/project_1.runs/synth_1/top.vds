@@ -1,0 +1,1043 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 19:54:49 2023
+# Process ID: 7112
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/top.vds
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4336 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 864.496 ; gain = 177.418
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:128]
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:161]
+WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:182]
+WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:183]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/.Xil/Vivado-7112-LYC/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/.Xil/Vivado-7112-LYC/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/vivado2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (2#1) [D:/vivado2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:110]
+	Parameter kEmulateDDC bound to: 1 - type: bool 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kAddBUFG bound to: 1 - type: bool 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kEdidFileName bound to: dgl_1080p_cea.data - type: string 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:75]
+	Parameter kClkRange bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (3#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (4#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsyncReset.vhd:72]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:118]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:132]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 6.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:173]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:232]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (4#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (5#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Decoder.vhd:96]
+	Parameter kCtlTknCount bound to: 128 - type: integer 
+	Parameter kTimeoutMs bound to: 50 - type: integer 
+	Parameter kRefClkFrqMHz bound to: 200 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:85]
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:92]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:102]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:130]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (6#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncBase.vhd:74]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (6#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (7#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncBase.vhd:74]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (7#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:95]
+	Parameter kUseFastAlgorithm bound to: 0 - type: bool 
+	Parameter kCtlTknCount bound to: 128 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (8#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (9#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (10#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/ResyncToBUFG.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (11#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/EEPROM_8b.vhd:85]
+	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
+	Parameter kSlaveAddress bound to: 7'b1010000 
+	Parameter kAddrBits bound to: 8 - type: integer 
+	Parameter kWritable bound to: 0 - type: bool 
+	Parameter kInitFileName bound to: dgl_1080p_cea.data - type: string 
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TWI_SlaveCtl.vhd:87]
+	Parameter SLAVE_ADDRESS bound to: 8'b10100000 
+	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TWI_SlaveCtl.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/GlitchFilter.vhd:69]
+	Parameter kNoOfPeriodsToFilter bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (12#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (13#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (14#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (15#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/rgb2dvi.vhd:94]
+	Parameter kGenerateSerialClk bound to: 1 - type: bool 
+	Parameter kClkPrimitive bound to: PLL - type: string 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kRstActiveHigh bound to: 1 - type: bool 
+	Parameter kD0Swap bound to: 0 - type: bool 
+	Parameter kD1Swap bound to: 0 - type: bool 
+	Parameter kD2Swap bound to: 0 - type: bool 
+	Parameter kClkSwap bound to: 0 - type: bool 
+WARNING: [Synth 8-3819] Generic 'kGenerateSerialClkv' not present in instantiated entity will be ignored [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/new/top.v:136]
+INFO: [Synth 8-638] synthesizing module 'ClockGen' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:46]
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kClkPrimitive bound to: PLL - type: string 
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-3491] module 'ResetBridge' declared at 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsyncReset.vhd:63' bound to instance 'LockLostReset' of component 'ResetBridge' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:82]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'SyncAsync' declared at 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:61' bound to instance 'PLL_LockSyncAsync' of component 'SyncAsync' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized3' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized3' (15#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/dvi2rgb/src/SyncAsync.vhd:72]
+WARNING: [Synth 8-614] signal 'pRst' is read in the process but is not in the sensitivity list [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:97]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 6.250000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'PLLE2_ADV' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:239]
+WARNING: [Synth 8-6014] Unused sequential element pLockGained_reg was removed.  [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'ClockGen' (16#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/ClockGen.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (17#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (18#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (19#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/rgb2dvi.vhd:94]
+INFO: [Synth 8-6155] done synthesizing module 'top' (20#1) [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/new/top.v:2]
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port SerialClk
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port aRst
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst_n
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port aRst
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port pRst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 927.078 ; gain = 240.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 927.078 ; gain = 240.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 927.078 ; gain = 240.000
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_0'
+Finished Parsing XDC File [d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_0'
+Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/constrs_1/new/hdmi.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/constrs_1/new/hdmi.xdc:5]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/constrs_1/new/hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/constrs_1/new/hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1066.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1066.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for video_pll_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
+INFO: [Synth 8-5546] ROM "eeprom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'sState_reg' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 resetst |                      00000000001 |                      00000000001
+                  idlest |                      00000000010 |                      00000000010
+                 tokenst |                      00000000100 |                      00000000100
+               eyeopenst |                      00000001000 |                      00000001000
+               jtrzonest |                      00000010000 |                      00000010000
+                dlydecst |                      00010000000 |                      00010000000
+          dlytstcenterst |                      00100000000 |                      00100000000
+               alignedst |                      01000000000 |                      01000000000
+                dlyincst |                      00000100000 |                      00000100000
+             dlytstovfst |                      00001000000 |                      00001000000
+            alignerrorst |                      10000000000 |                      10000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+               staddress |                              011 |                              001
+            stturnaround |                              110 |                              110
+                  stsack |                              100 |                              100
+                  stread |                              001 |                              010
+                  stmack |                              010 |                              101
+                 stwrite |                              111 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                               00
+                  stread |                             0010 |                               01
+            stregaddress |                             0100 |                               11
+                 stwrite |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sState_reg' using encoding 'one-hot' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 16    
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 5     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 84    
++---Registers : 
+	               24 Bit    Registers := 3     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 130   
++---RAMs : 
+	              320 Bit         RAMs := 3     
++---Muxes : 
+	  12 Input     11 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 8     
+	   5 Input      8 Bit        Muxes := 3     
+	 257 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 15    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 83    
+	  12 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module SyncAsync__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module TMDS_Clocking 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module SyncAsync__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module SyncBase 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SyncBase__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PhaseAlign 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	  12 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  12 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ChannelBond 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              320 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module TMDS_Decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module ResyncToBUFG 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GlitchFilter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module TWI_SlaveCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+Module EEPROM_8b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	 257 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module SyncAsync__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module ClockGen 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/imports/rgb2dvi/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port aRst
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port pRst
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pAllVld_q_reg' (FD) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pAllVld_q_reg'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pAllVld_q_reg' (FD) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pAllVld_q_reg'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pAllVldBgnFlag_reg' (FD) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pAllVldBgnFlag_reg'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pAllVldBgnFlag_reg' (FD) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pAllVldBgnFlag_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                                                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+|top         | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
+|top         | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
+|top         | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_0/clk_out1' to pin 'video_pll_0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1066.238 ; gain = 379.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                                                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+|top         | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
+|top         | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
+|top         | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2   | 
++------------+------------------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[4]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1069.633 ; gain = 382.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_2_reg | 5      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|top         | vid_pData_d1_reg[23]                             | 3      | 24    | NO           | NO                 | YES               | 24     | 0       | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |video_pll   |     1|
+|2     |BUFG        |     1|
+|3     |BUFIO       |     1|
+|4     |BUFR        |     1|
+|5     |CARRY4      |    18|
+|6     |IDELAYCTRL  |     1|
+|7     |IDELAYE2    |     3|
+|8     |ISERDESE2   |     3|
+|9     |ISERDESE2_1 |     3|
+|10    |LUT1        |    28|
+|11    |LUT2        |    67|
+|12    |LUT3        |   121|
+|13    |LUT4        |   104|
+|14    |LUT5        |   130|
+|15    |LUT6        |   230|
+|16    |MMCME2_ADV  |     1|
+|17    |MUXF7       |    16|
+|18    |MUXF8       |     8|
+|19    |OSERDESE2   |     4|
+|20    |OSERDESE2_1 |     4|
+|21    |PLLE2_ADV   |     1|
+|22    |RAM32M      |     6|
+|23    |SRL16E      |    27|
+|24    |FDCE        |    13|
+|25    |FDPE        |    25|
+|26    |FDRE        |   569|
+|27    |FDSE        |    28|
+|28    |IBUFDS      |     4|
+|29    |IOBUF       |     2|
+|30    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  1425|
+|2     |  dvi2rgb_m0                         |dvi2rgb                      |  1024|
+|3     |    \DataDecoders[0].DecoderX        |TMDS_Decoder                 |   268|
+|4     |      ChannelBondX                   |ChannelBond_26               |    65|
+|5     |      InputSERDES_X                  |InputSERDES_27               |     4|
+|6     |      PhaseAlignX                    |PhaseAlign_28                |   136|
+|7     |      SyncBaseOvf                    |SyncBase_29                  |     9|
+|8     |        SyncAsyncx                   |SyncAsync__parameterized1_32 |     2|
+|9     |      SyncBaseRst                    |SyncBase__parameterized0_30  |     3|
+|10    |        SyncAsyncx                   |SyncAsync_31                 |     2|
+|11    |    \DataDecoders[1].DecoderX        |TMDS_Decoder_7               |   262|
+|12    |      ChannelBondX                   |ChannelBond_19               |    61|
+|13    |      InputSERDES_X                  |InputSERDES_20               |     4|
+|14    |      PhaseAlignX                    |PhaseAlign_21                |   137|
+|15    |      SyncBaseOvf                    |SyncBase_22                  |     9|
+|16    |        SyncAsyncx                   |SyncAsync__parameterized1_25 |     2|
+|17    |      SyncBaseRst                    |SyncBase__parameterized0_23  |     3|
+|18    |        SyncAsyncx                   |SyncAsync_24                 |     2|
+|19    |    \DataDecoders[2].DecoderX        |TMDS_Decoder_8               |   258|
+|20    |      ChannelBondX                   |ChannelBond                  |    59|
+|21    |      InputSERDES_X                  |InputSERDES                  |     4|
+|22    |      PhaseAlignX                    |PhaseAlign                   |   135|
+|23    |      SyncBaseOvf                    |SyncBase                     |     9|
+|24    |        SyncAsyncx                   |SyncAsync__parameterized1    |     2|
+|25    |      SyncBaseRst                    |SyncBase__parameterized0     |     3|
+|26    |        SyncAsyncx                   |SyncAsync_18                 |     2|
+|27    |    \GenerateBUFG.ResyncToBUFG_X     |ResyncToBUFG                 |     1|
+|28    |    \GenerateDDC.DDC_EEPROM          |EEPROM_8b                    |   196|
+|29    |      I2C_SlaveController            |TWI_SlaveCtl                 |   109|
+|30    |        GlitchF_SCL                  |GlitchFilter                 |    12|
+|31    |        GlitchF_SDA                  |GlitchFilter_15              |    12|
+|32    |        SyncSCL                      |SyncAsync_16                 |     3|
+|33    |        SyncSDA                      |SyncAsync_17                 |     3|
+|34    |    LockLostReset                    |ResetBridge_9                |     2|
+|35    |      SyncAsyncx                     |SyncAsync_14                 |     2|
+|36    |    TMDS_ClockingX                   |TMDS_Clocking                |    37|
+|37    |      LockLostReset                  |ResetBridge_10               |     4|
+|38    |        SyncAsyncx                   |SyncAsync_13                 |     3|
+|39    |      MMCM_LockSync                  |SyncAsync__parameterized0    |     4|
+|40    |      RdyLostReset                   |ResetBridge_11               |     3|
+|41    |        SyncAsyncx                   |SyncAsync_12                 |     2|
+|42    |  rgb2dvi_m0                         |rgb2dvi                      |   348|
+|43    |    \ClockGenInternal.ClockGenX      |ClockGen                     |    12|
+|44    |      LockLostReset                  |ResetBridge_5                |     3|
+|45    |        SyncAsyncx                   |SyncAsync_6                  |     2|
+|46    |      PLL_LockSyncAsync              |SyncAsync__parameterized3    |     2|
+|47    |    ClockSerializer                  |OutputSERDES                 |     3|
+|48    |    \DataEncoders[0].DataEncoder     |TMDS_Encoder                 |   114|
+|49    |    \DataEncoders[0].DataSerializer  |OutputSERDES_0               |     3|
+|50    |    \DataEncoders[1].DataEncoder     |TMDS_Encoder_1               |   104|
+|51    |    \DataEncoders[1].DataSerializer  |OutputSERDES_2               |     3|
+|52    |    \DataEncoders[2].DataEncoder     |TMDS_Encoder_3               |   104|
+|53    |    \DataEncoders[2].DataSerializer  |OutputSERDES_4               |     3|
+|54    |    LockLostReset                    |ResetBridge                  |     2|
+|55    |      SyncAsyncx                     |SyncAsync                    |     2|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1074.848 ; gain = 387.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 1074.848 ; gain = 248.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1074.848 ; gain = 387.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1078.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1078.910 ; gain = 690.227
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1078.910 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 19:56:02 2023...

@@ -1,0 +1,13 @@
+set_property SRC_FILE_INFO {cfile:F:/BaiduYunDownload/KXK7TC01_DVD/FPGA_RefDesign/PCIe_DMA/PCIE_DMA_Demo.src/system.xdc rfile:../PCIE_DMA_Demo.src/system.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC PCIE_X0Y0 [get_cells inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/pcie_top_i/pcie_7x_i/pcie_block_i]
+set_property src_info {type:XDC file:1 line:53 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y7 [get_cells {inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property src_info {type:XDC file:1 line:56 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y6 [get_cells {inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property src_info {type:XDC file:1 line:59 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y5 [get_cells {inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property src_info {type:XDC file:1 line:62 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y4 [get_cells {inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property src_info {type:XDC file:1 line:106 export:INPUT save:INPUT read:READ} [current_design]
+set_operating_conditions -voltage {vcco33 1.500}

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 11 16:45:33 2023
+# Process ID: 1956
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2620 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\k7325t_ddr3_1600_golden\ddr_1600\k7325t_ddr3_1066_golden.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/k7325t_ddr3_1600_golden/ddr_1600/k7325t_ddr3_1066_golden.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 930.789 ; gain = 208.148
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 16:48:39 2023...

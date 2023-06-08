@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 11 07:55:52 2020
+# Process ID: 4996
+# Current directory: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11384 F:\K325667\kintex7_2020_dev_board-master\kintex7_2020_dev_board-master\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden.xpr
+# Log file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/vivado.log
+# Journal file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 877.590 ; gain = 184.484
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 07:56:48 2020...

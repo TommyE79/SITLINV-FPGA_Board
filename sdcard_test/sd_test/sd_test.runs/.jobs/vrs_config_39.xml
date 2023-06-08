@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_0_synth_1" LaunchDir="D:/demo_AX7103/16_sd_test/sd_test/sd_test.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/demo_AX7103/16_sd_test/sd_test/sd_test.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/demo_AX7103/16_sd_test/sd_test/sd_test.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+	</Run>
+</Runs>
+

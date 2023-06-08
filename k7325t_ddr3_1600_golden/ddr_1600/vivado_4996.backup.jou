@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 11 07:55:52 2020
+# Process ID: 4996
+# Current directory: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11384 F:\K325667\kintex7_2020_dev_board-master\kintex7_2020_dev_board-master\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden\k7325t_ddr3_1066_golden.xpr
+# Log file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/vivado.log
+# Journal file: F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/kintex7_2020_dev_board-master/kintex7_2020_dev_board-master/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.xpr
+update_compile_order -fileset sources_1

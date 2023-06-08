@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1675738318">
+  <File Type="BITSTR-BMM" Name="k7325t_ddr3_1066_golden_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="k7325t_ddr3_1066_golden_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="k7325t_ddr3_1066_golden_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="k7325t_ddr3_1066_golden.tcl"/>
+  <File Type="OPT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="k7325t_ddr3_1066_golden_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="k7325t_ddr3_1066_golden_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="k7325t_ddr3_1066_golden_reports.tcl"/>
+  <File Type="OPT-DRC" Name="k7325t_ddr3_1066_golden_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="k7325t_ddr3_1066_golden.hwdef"/>
+  <File Type="PWROPT-DCP" Name="k7325t_ddr3_1066_golden_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="k7325t_ddr3_1066_golden_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="k7325t_ddr3_1066_golden_placed.dcp"/>
+  <File Type="PLACE-IO" Name="k7325t_ddr3_1066_golden_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="k7325t_ddr3_1066_golden_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="k7325t_ddr3_1066_golden_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="k7325t_ddr3_1066_golden_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="k7325t_ddr3_1066_golden_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="k7325t_ddr3_1066_golden_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="k7325t_ddr3_1066_golden_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="k7325t_ddr3_1066_golden.bgn"/>
+  <File Type="PLACE-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="k7325t_ddr3_1066_golden_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="k7325t_ddr3_1066_golden.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="k7325t_ddr3_1066_golden_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="k7325t_ddr3_1066_golden_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="k7325t_ddr3_1066_golden.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="k7325t_ddr3_1066_golden_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="k7325t_ddr3_1066_golden_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="k7325t_ddr3_1066_golden_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="k7325t_ddr3_1066_golden_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="k7325t_ddr3_1066_golden_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="k7325t_ddr3_1066_golden.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="k7325t_ddr3_1066_golden_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="k7325t_ddr3_1066_golden.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="k7325t_ddr3_1066_golden_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="k7325t_ddr3_1066_golden_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="k7325t_ddr3_1066_golden.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="k7325t_ddr3_1066_golden_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="k7325t_ddr3_1066_golden_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="k7325t_ddr3_1066_golden_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="k7325t_ddr3_1066_golden_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="k7325t_ddr3_1066_golden_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="k7325t_ddr3_1066_golden_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="k7325t_ddr3_1066_golden_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="k7325t_ddr3_1066_golden_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="k7325t_ddr3_1066_golden_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="k7325t_ddr3_1066_golden_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="k7325t_ddr3_1066_golden_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="k7325t_ddr3_1066_golden_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="k7325t_ddr3_1066_golden_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="k7325t_ddr3_1066_golden_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="k7325t_ddr3_1066_golden_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="k7325t_ddr3_1066_golden_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="k7325t_ddr3_1066_golden_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="k7325t_ddr3_1066_golden_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="k7325t_ddr3_1066_golden_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="k7325t_ddr3_1066_golden.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="k7325t_ddr3_1066_golden_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="k7325t_ddr3_1066_golden.rbt"/>
+  <File Type="BITSTR-NKY" Name="k7325t_ddr3_1066_golden.nky"/>
+  <File Type="BG-DRC" Name="k7325t_ddr3_1066_golden.drc"/>
+  <File Type="RDI-RDI" Name="k7325t_ddr3_1066_golden.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/user/mem_burst.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_burst.v"/>
+        <Attr Name="ImportTime" Val="1598064668"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/user/mem_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/sources_1/user/mem_test.v"/>
+        <Attr Name="ImportTime" Val="1598065834"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/user/k7325t_ddr3_1066_golden.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/sources_1/user/k7325t_ddr3_1066_golden.v"/>
+        <Attr Name="ImportTime" Val="1599567064"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr/mig_a.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1598117971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr/mig_b.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/sources_1/ip/ddr/mig_b.prj"/>
+        <Attr Name="ImportTime" Val="1598117971"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="k7325t_ddr3_1066_golden"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/k7325t_ddr3_1066_golden.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="G:/Xilinx_K7_325t/k7325t_ddr3_1066_golden/k7325t_ddr3_1066_golden.srcs/constrs_1/new/k7325t_ddr3_1066_golden.xdc"/>
+        <Attr Name="ImportTime" Val="1598118032"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/k7325t_ddr3_1066_golden.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ddr"/>
+</GenRun>

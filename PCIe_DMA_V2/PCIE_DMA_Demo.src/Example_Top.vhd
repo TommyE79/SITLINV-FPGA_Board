@@ -1,0 +1,246 @@
+------------------------------------------------------------------------------
+--      _______      _______                                                --
+--     / ____\ \    / /_   _|                                               --
+--    | |  __ \ \  / /  | |                                                 --
+--    | | |_ | \ \/ /   | |                                                 --
+--    | |__| |  \  /   _| |_                                                --
+--     \_____|   \/   |_____|                                               --
+--                                                                          --
+-- Copyright (c) 2012-2015 GVI.  All rights reserved.                       --
+--                                                                          --
+-- THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHWARRANTY OF ANY   --
+-- KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE      --
+-- IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A               --
+-- PARTICULAR PURPOSE.                                                      --
+--                                                                          --
+-- Website: http://www.gvi-tech.com/                                        --
+-- Email: support@gvi-tech.com                                              --
+--                                                                          --
+------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY Example_Top IS
+PORT (
+	pci_exp_txp			: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	pci_exp_txn			: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	pci_exp_rxp			: IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+	pci_exp_rxn			: IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+	pcie_refclkin_p		: IN  STD_LOGIC;
+	pcie_refclkin_n		: IN  STD_LOGIC;
+	sys_rst_n			: IN  STD_LOGIC;
+	
+	Dbg_LED	 			: out STD_LOGIC;
+	link_up				: OUT STD_LOGIC;
+	clk_in				: IN  STD_LOGIC
+);
+END Example_Top;
+
+ARCHITECTURE trans OF Example_Top IS
+
+	constant C_PCIE_USER_DATA_WIDTH		: integer := 64;
+	constant C_PCIE_NUM_CHNL			: integer := 1;
+		
+	Component gvi_pcie_gen2x4_wrapper
+	Generic(
+		G_NUM_CHNL			: integer range 1 to 12 := 1;
+		G_DATA_WIDTH		: integer := 64
+	);
+	Port(
+		pci_exp_txp			: out std_logic_vector(3 downto 0);
+		pci_exp_txn			: out std_logic_vector(3 downto 0);
+		pci_exp_rxp			: in  std_logic_vector(3 downto 0);
+		pci_exp_rxn			: in  std_logic_vector(3 downto 0);
+				
+		sys_clk_p			: in  std_logic;
+		sys_clk_n			: in  std_logic;
+		sys_rst_n			: in  std_logic;
+	
+		link_up				: out std_logic;
+		chnl_reset			: out std_logic;
+		chnl_user_clk		: out std_logic;
+		
+		chnl_rx_clk			: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_rx				: out std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_rx_ack			: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_rx_last		: out std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_rx_len			: out std_logic_vector((G_NUM_CHNL*32)-1 downto 0);
+		chnl_rx_off			: out std_logic_vector((G_NUM_CHNL*31)-1 downto 0);
+		chnl_rx_data		: out std_logic_vector((G_NUM_CHNL*G_DATA_WIDTH)-1 downto 0);
+		chnl_rx_data_valid	: out std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_rx_data_ren	: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		
+		chnl_tx_clk			: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_tx				: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_tx_ack			: out std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_tx_last		: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_tx_len			: in  std_logic_vector((G_NUM_CHNL*32)-1 downto 0);
+		chnl_tx_off			: in  std_logic_vector((G_NUM_CHNL*31)-1 downto 0);
+		chnl_tx_data		: in  std_logic_vector((G_NUM_CHNL*G_DATA_WIDTH)-1 downto 0);
+		chnl_tx_data_valid	: in  std_logic_vector(G_NUM_CHNL-1 downto 0);
+		chnl_tx_data_ren	: out std_logic_vector(G_NUM_CHNL-1 downto 0)
+	);
+	END Component;
+	
+	
+	Component chnl_tester
+	GENERIC (
+		G_DATA_WIDTH    : INTEGER := 32
+	);
+	PORT (
+		CLK                 : IN STD_LOGIC;
+		RST                 : IN STD_LOGIC;
+		CHNL_RX_CLK         : OUT STD_LOGIC;
+		CHNL_RX             : IN STD_LOGIC;
+		CHNL_RX_ACK         : OUT STD_LOGIC;
+		CHNL_RX_LAST        : IN STD_LOGIC;
+		CHNL_RX_LEN         : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		CHNL_RX_OFF         : IN STD_LOGIC_VECTOR(30 DOWNTO 0);
+		CHNL_RX_DATA        : IN STD_LOGIC_VECTOR(G_DATA_WIDTH - 1 DOWNTO 0);
+		CHNL_RX_DATA_VALID  : IN STD_LOGIC;
+		CHNL_RX_DATA_REN    : OUT STD_LOGIC;
+		CHNL_TX_CLK         : OUT STD_LOGIC;
+		CHNL_TX             : OUT STD_LOGIC;
+		CHNL_TX_ACK         : IN STD_LOGIC;
+		CHNL_TX_LAST        : OUT STD_LOGIC;
+		CHNL_TX_LEN         : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+		CHNL_TX_OFF         : OUT STD_LOGIC_VECTOR(30 DOWNTO 0);
+		CHNL_TX_DATA        : OUT STD_LOGIC_VECTOR(G_DATA_WIDTH - 1 DOWNTO 0);
+		CHNL_TX_DATA_VALID  : OUT STD_LOGIC;
+		CHNL_TX_DATA_REN    : IN STD_LOGIC
+	);
+	END Component;
+	
+	signal CHNL_RX_CLK			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_RX				: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_RX_ACK			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_RX_LAST			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_RX_LEN			: std_logic_vector((C_PCIE_NUM_CHNL*32)-1 downto 0);
+	signal CHNL_RX_OFF			: std_logic_vector((C_PCIE_NUM_CHNL*31)-1 downto 0);
+	signal CHNL_RX_DATA			: std_logic_vector((C_PCIE_NUM_CHNL*C_PCIE_USER_DATA_WIDTH)-1 downto 0);
+	signal CHNL_RX_DATA_VALID	: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_RX_DATA_REN		: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	
+	signal CHNL_TX_CLK			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_TX				: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_TX_ACK			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_TX_LAST			: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_TX_LEN			: std_logic_vector((C_PCIE_NUM_CHNL*32)-1 downto 0);
+	signal CHNL_TX_OFF			: std_logic_vector((C_PCIE_NUM_CHNL*31)-1 downto 0);
+	signal CHNL_TX_DATA			: std_logic_vector((C_PCIE_NUM_CHNL*C_PCIE_USER_DATA_WIDTH)-1 downto 0);
+	signal CHNL_TX_DATA_VALID	: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	signal CHNL_TX_DATA_REN		: std_logic_vector(C_PCIE_NUM_CHNL-1 downto 0);
+	
+	signal chnl_reset			: std_logic;
+	signal chnl_user_clk		: std_logic;
+
+signal count			: std_logic_vector(31 downto 0);
+BEGIN
+
+--	Dbg_LED <= '1';	
+	Dbg_LED <= count(24);
+
+
+
+PROCESS (clk_in)
+	BEGIN
+		IF (clk_in'EVENT AND clk_in = '1') THEN
+					count <= count + 1;
+	END IF;
+END PROCESS;
+
+
+
+
+
+
+
+
+
+
+
+
+   
+	inst_gvi_pcie : gvi_pcie_gen2x4_wrapper
+	Generic Map(
+		G_NUM_CHNL			=> C_PCIE_NUM_CHNL,
+		G_DATA_WIDTH		=> C_PCIE_USER_DATA_WIDTH
+	)
+	Port Map(
+		pci_exp_txp			=> pci_exp_txp,
+		pci_exp_txn			=> pci_exp_txn,
+		pci_exp_rxp			=> pci_exp_rxp,
+		pci_exp_rxn			=> pci_exp_rxn,		
+		
+		sys_clk_p			=> pcie_refclkin_p,
+		sys_clk_n			=> pcie_refclkin_n,
+		sys_rst_n			=> sys_rst_n,
+		
+		link_up				=> link_up,
+		chnl_reset			=> chnl_reset,
+		chnl_user_clk		=> chnl_user_clk,
+		
+		chnl_rx_clk			=> CHNL_RX_CLK,
+		chnl_rx				=> CHNL_RX,
+		chnl_rx_ack			=> CHNL_RX_ACK,
+		chnl_rx_last		=> CHNL_RX_LAST,
+		chnl_rx_len			=> CHNL_RX_LEN,
+		chnl_rx_off			=> CHNL_RX_OFF,
+		chnl_rx_data		=> CHNL_RX_DATA,
+		chnl_rx_data_valid	=> CHNL_RX_DATA_VALID,
+		chnl_rx_data_ren	=> CHNL_RX_DATA_REN,
+		
+		chnl_tx_clk			=> CHNL_TX_CLK,
+		chnl_tx				=> CHNL_TX,
+		chnl_tx_ack			=> CHNL_TX_ACK,
+		chnl_tx_last		=> CHNL_TX_LAST,
+		chnl_tx_len			=> CHNL_TX_LEN,
+		chnl_tx_off			=> CHNL_TX_OFF,
+		chnl_tx_data		=> CHNL_TX_DATA,
+		chnl_tx_data_valid	=> CHNL_TX_DATA_VALID,
+		chnl_tx_data_ren	=> CHNL_TX_DATA_REN
+	);
+	
+	GEN_CHNL_TESTER : for i in 0 to C_PCIE_NUM_CHNL-1 generate
+	begin
+		inst_chnl_tester : chnl_tester
+		GENERIC MAP(
+			G_DATA_WIDTH    	=> C_PCIE_USER_DATA_WIDTH
+		)
+		PORT MAP(
+			CLK                 => chnl_user_clk,
+			RST                 => chnl_reset,
+			
+			CHNL_RX_CLK			=> CHNL_RX_CLK(i),
+			CHNL_RX				=> CHNL_RX(i),
+			CHNL_RX_ACK			=> CHNL_RX_ACK(i),
+			CHNL_RX_LAST		=> CHNL_RX_LAST(i),
+			CHNL_RX_LEN			=> CHNL_RX_LEN(32*i+31 DOWNTO 32*i),
+			CHNL_RX_OFF			=> CHNL_RX_OFF(31*i+30 DOWNTO 31*i),
+			CHNL_RX_DATA		=> CHNL_RX_DATA(C_PCIE_USER_DATA_WIDTH*(i+1) - 1 DOWNTO C_PCIE_USER_DATA_WIDTH*i),
+			CHNL_RX_DATA_VALID	=> CHNL_RX_DATA_VALID(i),
+			CHNL_RX_DATA_REN	=> CHNL_RX_DATA_REN(i),
+			
+			CHNL_TX_CLK			=> CHNL_TX_CLK(i),
+			CHNL_TX				=> CHNL_TX(i),
+			CHNL_TX_ACK			=> CHNL_TX_ACK(i),
+			CHNL_TX_LAST		=> CHNL_TX_LAST(i),
+			CHNL_TX_LEN			=> CHNL_TX_LEN(32*i+31 DOWNTO 32*i),
+			CHNL_TX_OFF			=> CHNL_TX_OFF(31*i+30 DOWNTO 31*i),
+			CHNL_TX_DATA		=> CHNL_TX_DATA(C_PCIE_USER_DATA_WIDTH*(i+1) - 1 DOWNTO C_PCIE_USER_DATA_WIDTH*i),
+			CHNL_TX_DATA_VALID	=> CHNL_TX_DATA_VALID(i),
+			CHNL_TX_DATA_REN	=> CHNL_TX_DATA_REN(i)
+		);
+	end generate GEN_CHNL_TESTER;
+	
+END trans;
+
+
+
+
+
+

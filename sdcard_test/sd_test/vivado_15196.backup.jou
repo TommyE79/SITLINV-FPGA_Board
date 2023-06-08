@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  7 16:21:31 2018
+# Process ID: 15196
+# Current directory: D:/demo_AX7325/demo_ax7325/07_sd_test/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8608 D:\demo_AX7325\demo_ax7325\07_sd_test\sd_test\sd_test.xpr
+# Log file: D:/demo_AX7325/demo_ax7325/07_sd_test/sd_test/vivado.log
+# Journal file: D:/demo_AX7325/demo_ax7325/07_sd_test/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_AX7325/demo_ax7325/07_sd_test/sd_test/sd_test.xpr
+update_compile_order -fileset sources_1

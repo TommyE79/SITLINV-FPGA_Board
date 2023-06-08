@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 27 10:31:27 2022
+# Process ID: 7924
+# Current directory: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5844 D:\BaiduNetdiskDownload\STLV7325-赛特凌威板子资料\test_code_vivado2019\CD1\PCIe_DMA_V2\PCIe_DMA_V2_5031_spix4_ok\PCIE_DMA_Demo.xpr
+# Log file: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/STLV7325-赛特凌威板子资料/test_code_vivado2019/CD1/PCIe_DMA_V2/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.xpr
+update_compile_order -fileset sources_1

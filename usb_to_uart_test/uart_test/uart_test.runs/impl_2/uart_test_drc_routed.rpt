@@ -1,0 +1,41 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Feb  7 12:15:48 2023
+| Host         : LYC running 64-bit major release  (build 9200)
+| Command      : report_drc -file uart_test_drc_routed.rpt -pb uart_test_drc_routed.pb -rpx uart_test_drc_routed.rpx
+| Design       : uart_test
+| Device       : xc7k325tffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++----------+----------+--------------------------------------+------------+
+| Rule     | Severity | Description                          | Violations |
++----------+----------+--------------------------------------+------------+
+| CFGBVS-7 | Warning  | CONFIG_VOLTAGE with Config Bank VCCO | 1          |
++----------+----------+--------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-7#1 Warning
+CONFIG_VOLTAGE with Config Bank VCCO  
+The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 2.50.  However, the CONFIG_VOLTAGE for current_design is set to 3.3. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: B24 (IO_L1P_T0_D00_MOSI_14), A25 (IO_L1N_T0_D01_DIN_14), B22 (IO_L2P_T0_D02_14), A22 (IO_L2N_T0_D03_14), B25 (IO_L3P_T0_DQS_PUDC_B_14), and C23 (IO_L6P_T0_FCS_B_14)
+Related violations: <none>
+
+

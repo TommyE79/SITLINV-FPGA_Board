@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 12 19:58:56 2023
+# Process ID: 3496
+# Current directory: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1
+# Command line: vivado.exe -log golden_rgmii_1gb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source golden_rgmii_1gb.tcl
+# Log file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1/golden_rgmii_1gb.vds
+# Journal file: G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source golden_rgmii_1gb.tcl -notrace
+Command: synth_design -top golden_rgmii_1gb -part xc7k325tffg676-2
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/ram/ram.xci
+
+INFO: [IP_Flow 19-2162] IP 'ram' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-2' used to customize the IP 'ram' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6464
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.863 ; gain = 53.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'golden_rgmii_1gb' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/golden_rgmii_1gb.v:4]
+	Parameter speed_selection bound to: 2'b10 
+	Parameter duplex_mode bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'gmii_to_rgmii' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/gmii_to_rgmii.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (1#1) [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (2#1) [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'gmii_to_rgmii' (4#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/gmii_to_rgmii.v:2]
+INFO: [Synth 8-6157] synthesizing module 'udp' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/udp.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ipsend' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/ipsend.v:3]
+	Parameter idle bound to: 4'b0000 
+	Parameter start bound to: 4'b0001 
+	Parameter make bound to: 4'b0010 
+	Parameter send55 bound to: 4'b0011 
+	Parameter sendmac bound to: 4'b0100 
+	Parameter sendheader bound to: 4'b0101 
+	Parameter senddata bound to: 4'b0110 
+	Parameter sendcrc bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'ipsend' (5#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/ipsend.v:3]
+INFO: [Synth 8-6157] synthesizing module 'crc' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/crc.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'crc' (6#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/crc.v:4]
+INFO: [Synth 8-6157] synthesizing module 'iprecieve' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/iprecieve.v:4]
+	Parameter idle bound to: 4'b0000 
+	Parameter six_55 bound to: 4'b0001 
+	Parameter spd_d5 bound to: 4'b0010 
+	Parameter rx_mac bound to: 4'b0011 
+	Parameter rx_IP_Protocol bound to: 4'b0100 
+	Parameter rx_IP_layer bound to: 4'b0101 
+	Parameter rx_UDP_layer bound to: 4'b0110 
+	Parameter rx_data bound to: 4'b0111 
+	Parameter rx_finish bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'iprecieve' (7#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/iprecieve.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (8#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/udp.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ram' [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1/.Xil/Vivado-3496-WIN-10J6P4VGMFJ/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (9#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1/.Xil/Vivado-3496-WIN-10J6P4VGMFJ/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'golden_rgmii_1gb' (10#1) [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/golden_rgmii_1gb.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1245.500 ; gain = 121.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.500 ; gain = 121.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.500 ; gain = 121.301
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1245.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/ram/ram/ram_in_context.xdc] for cell 'ram_inst'
+Finished Parsing XDC File [g:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/ram/ram/ram_in_context.xdc] for cell 'ram_inst'
+Parsing XDC File [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/golden_rgmii_1gb.xdc]
+Finished Parsing XDC File [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/golden_rgmii_1gb.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.srcs/golden_rgmii_1gb.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/golden_rgmii_1gb_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/golden_rgmii_1gb_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1369.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1369.137 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ram_inst' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ram_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'iprecieve'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                  six_55 |                             0001 |                             0001
+                  spd_d5 |                             0010 |                             0010
+                  rx_mac |                             0011 |                             0011
+          rx_IP_Protocol |                             0100 |                             0100
+             rx_IP_layer |                             0101 |                             0101
+            rx_UDP_layer |                             0110 |                             0110
+                 rx_data |                             0111 |                             0111
+               rx_finish |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'iprecieve'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	              160 Bit    Registers := 1     
+	              152 Bit    Registers := 1     
+	               88 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 15    
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   8 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 1     
+	   5 Input   31 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   6 Input   16 Bit        Muxes := 1     
+	   9 Input   16 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	  15 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 9     
+	   8 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   9 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 42    
+	   8 Input    1 Bit        Muxes := 15    
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 4     
+	  12 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1376.539 ; gain = 252.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1383.035 ; gain = 258.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|golden_rgmii_1gb | udp_inst0/iprecieve_inst/mymac_reg[47]       | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|golden_rgmii_1gb | udp_inst0/iprecieve_inst/myIP_layer_reg[127] | 16     | 8     | NO           | NO                 | YES               | 8      | 0       | 
++-----------------+----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ram           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ram    |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |    64|
+|4     |IDDR   |     5|
+|5     |LUT1   |    62|
+|6     |LUT2   |   127|
+|7     |LUT3   |   106|
+|8     |LUT4   |    52|
+|9     |LUT5   |    69|
+|10    |LUT6   |   200|
+|11    |ODDR   |     6|
+|12    |SRL16E |    16|
+|13    |FDPE   |    32|
+|14    |FDRE   |   595|
+|15    |FDSE   |     1|
+|16    |IBUF   |     7|
+|17    |OBUF   |     9|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1392.906 ; gain = 137.668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1392.906 ; gain = 268.707
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1392.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:18 . Memory (MB): peak = 1399.758 ; gain = 275.559
+INFO: [Common 17-1381] The checkpoint 'G:/BaiduNetdiskDownload/K7325_676_hdmi_inout/RJ45_A_rgmii_1G/golden_rgmii_1gb.runs/synth_1/golden_rgmii_1gb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file golden_rgmii_1gb_utilization_synth.rpt -pb golden_rgmii_1gb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 20:00:24 2023...

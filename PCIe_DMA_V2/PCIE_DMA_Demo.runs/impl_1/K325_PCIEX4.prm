@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE0583EAE
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                     Checksum
+0x00000000    0x001F370B    Aug  1 09:01:06 2020    F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top.bit    0x017013A2
+File Checksum Total                                                                                                                                             0x017013A2

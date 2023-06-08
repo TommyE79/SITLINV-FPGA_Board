@@ -1,0 +1,92 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Feb  7 12:14:51 2023
+| Host         : LYC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uart_test_control_sets_placed.rpt
+| Design       : uart_test
+| Device       : xc7k325t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              55 |           17 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              68 |           21 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------+----------------------------------+--------------------+------------------+----------------+
+|  Clock Signal |           Enable Signal          |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++---------------+----------------------------------+--------------------+------------------+----------------+
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[1]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[0]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[2]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[5]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[7]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[4]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[6]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[3]_i_1_n_0  | uart_rx_inst/rst_n |                1 |              1 |
+|  sys_clk_BUFG | uart_tx_inst/tx_cnt              | uart_rx_inst/rst_n |                1 |              4 |
+|  sys_clk_BUFG | uart_rx_inst/rx_data_valid01_out | uart_rx_inst/rst_n |                2 |              8 |
+|  sys_clk_BUFG | uart_rx_inst/E[0]                | uart_rx_inst/rst_n |                2 |              8 |
+|  sys_clk_BUFG | uart_tx_inst/tx_data_latch0      | uart_rx_inst/rst_n |                2 |              8 |
+|  sys_clk_BUFG | wait_cnt                         | uart_rx_inst/rst_n |                6 |             32 |
+|  sys_clk_BUFG |                                  | uart_rx_inst/rst_n |               17 |             55 |
++---------------+----------------------------------+--------------------+------------------+----------------+
+
+

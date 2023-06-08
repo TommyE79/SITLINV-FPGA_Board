@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2019.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7k325t_0" gui_info=""/>
+  <ObjectList object_type="hw_cfgmem" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="PROGRAM.ADDRESS_RANGE" value="use_file"/>
+      <Properties Property="PROGRAM.BLANK_CHECK" value="0"/>
+      <Properties Property="PROGRAM.CFG_PROGRAM" value="1"/>
+      <Properties Property="PROGRAM.CHECKSUM" value="0"/>
+      <Properties Property="PROGRAM.ERASE" value="1"/>
+      <Properties Property="PROGRAM.FILES" value="E:/PXIE_325T_pin/led_x8/PXIE_led_x8.mcs"/>
+      <Properties Property="PROGRAM.PRM_FILE" value="E:/PXIE_325T_pin/led_x8/PXIE_led_x8.prm"/>
+      <Properties Property="PROGRAM.UNUSED_PIN_TERMINATION" value="pull-none"/>
+      <Properties Property="PROGRAM.VERIFY" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7k325t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="E:/PXIE_325T_pin/DDR1600/k7325t_ddr3_1600_golden.runs/impl_325T_900/k7325t_ddr3_1600_golden.bit"/>
+      <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl256sxxxxxx0-spi-x1_x2_x4"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_link" gui_info="">
+    <Object name="0_1_0/IBERT/Quad_115/MGT_X0Y2/TX->0_1_0/IBERT/Quad_115/MGT_X0Y3/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y3/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y2/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 1"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_115/MGT_X0Y3/TX->0_1_0/IBERT/Quad_115/MGT_X0Y2/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y2/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_115/MGT_X0Y3/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 0"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_117/MGT_X0Y10/TX->0_1_0/IBERT/Quad_117/MGT_X0Y9/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y9/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y10/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 1"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_117/MGT_X0Y11/TX->0_1_0/IBERT/Quad_117/MGT_X0Y8/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y8/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y11/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 0"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_117/MGT_X0Y8/TX->0_1_0/IBERT/Quad_117/MGT_X0Y11/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y11/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y8/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 3"/>
+    </Object>
+    <Object name="0_1_0/IBERT/Quad_117/MGT_X0Y9/TX->0_1_0/IBERT/Quad_117/MGT_X0Y10/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y10/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0/IBERT/Quad_117/MGT_X0Y9/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 2"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_linkgroup" gui_info="">
+    <Object name="LINKGROUP_0" gui_info="">
+      <Attributes Attribute="LINK_HANDLE0" value="0_1_0/IBERT/Quad_117/MGT_X0Y11/TX->0_1_0/IBERT/Quad_117/MGT_X0Y8/RX"/>
+      <Attributes Attribute="LINK_HANDLE1" value="0_1_0/IBERT/Quad_117/MGT_X0Y10/TX->0_1_0/IBERT/Quad_117/MGT_X0Y9/RX"/>
+      <Attributes Attribute="LINK_HANDLE2" value="0_1_0/IBERT/Quad_117/MGT_X0Y9/TX->0_1_0/IBERT/Quad_117/MGT_X0Y10/RX"/>
+      <Attributes Attribute="LINK_HANDLE3" value="0_1_0/IBERT/Quad_117/MGT_X0Y8/TX->0_1_0/IBERT/Quad_117/MGT_X0Y11/RX"/>
+      <Properties Property="DESCRIPTION" value="Found Links"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

@@ -1,0 +1,598 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 08:47:02 2020
+# Process ID: 6092
+# Current directory: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1
+# Command line: vivado.exe -log Example_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Example_Top.tcl -notrace
+# Log file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top.vdi
+# Journal file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Example_Top.tcl -notrace
+Command: link_design -top Example_Top -part xc7k325tffg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Netlist 29-17] Analyzing 504 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.src/pcie_7k325.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.src/pcie_7k325.xdc:104]
+INFO: [Timing 38-2] Deriving generated clocks [F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.src/pcie_7k325.xdc:104]
+create_generated_clock: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1476.535 ; gain = 640.730
+Finished Parsing XDC File [F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.src/pcie_7k325.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1476.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 31 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 31 instances
+
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1476.535 ; gain = 1131.215
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1476.535 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 136ae6adb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.768 . Memory (MB): peak = 1476.629 ; gain = 0.094
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1ea7f077b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 8 cells
+INFO: [Opt 31-1021] In phase Retarget, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 207ecc725
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-389] Phase Constant propagation created 4 cells and removed 4 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 26d2c1bda
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 1099 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 1eccd4ef4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1eccd4ef4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 228edfbf9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1599.758 ; gain = 0.066
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               8  |                                              4  |
+|  Constant propagation         |               4  |               4  |                                              0  |
+|  Sweep                        |               1  |            1099  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1599.758 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1cef35bce
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1599.758 ; gain = 0.066
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.873 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 28 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 9 Total Ports: 56
+Ending PowerOpt Patch Enables Task | Checksum: 16344bd0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 16344bd0f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1852.398 ; gain = 252.641
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1dab7247c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1dab7247c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1dab7247c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1852.398 ; gain = 375.863
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Example_Top_drc_opted.rpt -pb Example_Top_drc_opted.pb -rpx Example_Top_drc_opted.rpx
+Command: report_drc -file Example_Top_drc_opted.rpt -pb Example_Top_drc_opted.pb -rpx Example_Top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[10] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[5]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[11] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[6]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[12] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[7]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[13] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[8]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[14] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_1) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[5] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[0]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[6] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[1]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[7] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[2]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[8] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[3]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRARDADDR[9] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/Q[4]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[10] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[5]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[11] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[6]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[12] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[7]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[13] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[8]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[14] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_2) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[5] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[0]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[6] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[1]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[7] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[2]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[8] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[3]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0 has an input control pin inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_0/ADDRBWRADDR[9] (net: inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/mem/rRAM_reg_1_3[4]) which is driven by a register (inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/rdPtrEmpty/rRdPtr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a6f01d30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/wrPtrFull/rDir_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/asyncCompare/rDir_reg {FDCE}
+WARNING: [Place 30-568] A LUT 'inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/wrPtrFull/rDir_i_1__0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	inst_gvi_pcie/pcie_wrapper/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/asyncCompare/rDir_reg {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d7f9518b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16da99b69
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16da99b69
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 16da99b69
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 13e669aaa
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e73e1164
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 15422313d
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 15422313d
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d6423019
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:26 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f6754097
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1083a2c61
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 5c025454
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1bdea7c5d
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1ca1daaa1
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 8c40351b
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 8c40351b
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 13264f93a
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13264f93a
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.561. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 101cb8039
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 101cb8039
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 101cb8039
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 101cb8039
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 194263b01
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 194263b01
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Ending Placer Task | Checksum: c8bb7d1f
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+64 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file Example_Top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1852.398 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Example_Top_utilization_placed.rpt -pb Example_Top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file Example_Top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.545 . Memory (MB): peak = 1852.398 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 206dd6aa ConstDB: 0 ShapeSum: a84da675 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: a7531cb9
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:45 . Memory (MB): peak = 1983.848 ; gain = 131.449
+Post Restoration Checksum: NetGraph: 466ec7eb NumContArr: 60e454ce Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: a7531cb9
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 2012.449 ; gain = 160.051
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: a7531cb9
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 2022.258 ; gain = 169.859
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: a7531cb9
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 2022.258 ; gain = 169.859
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 248bbdd62
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:52 . Memory (MB): peak = 2069.969 ; gain = 217.570
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.608  | TNS=0.000  | WHS=-0.494 | THS=-685.692|
+
+Phase 2 Router Initialization | Checksum: af4e8207
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:54 . Memory (MB): peak = 2069.969 ; gain = 217.570
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000156062 %
+  Global Horizontal Routing Utilization  = 0.000138953 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11523
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 11519
+  Number of Partially Routed Nets     = 4
+  Number of Node Overlaps             = 5
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 8bfca3af
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:10 . Memory (MB): peak = 2074.203 ; gain = 221.805
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 846
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.555  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19fc3f2a4
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2078.238 ; gain = 225.840
+Phase 4 Rip-up And Reroute | Checksum: 19fc3f2a4
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 19fc3f2a4
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 19fc3f2a4
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2078.238 ; gain = 225.840
+Phase 5 Delay and Skew Optimization | Checksum: 19fc3f2a4
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 240b52616
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:21 . Memory (MB): peak = 2078.238 ; gain = 225.840
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.568  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 247701eac
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 2078.238 ; gain = 225.840
+Phase 6 Post Hold Fix | Checksum: 247701eac
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.750018 %
+  Global Horizontal Routing Utilization  = 0.737031 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 27b4be39f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 27b4be39f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y7/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y1/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y6/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y5/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin inst_gvi_pcie/pcie_wrapper/pcie_k7_gen2x4/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y4/GTNORTHREFCLK0
+Phase 9 Depositing Routes | Checksum: 28ddf0cea
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:23 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.568  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 28ddf0cea
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:24 . Memory (MB): peak = 2078.238 ; gain = 225.840
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:24 . Memory (MB): peak = 2078.238 ; gain = 225.840
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+86 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:15 ; elapsed = 00:01:26 . Memory (MB): peak = 2078.238 ; gain = 225.840
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2078.238 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2078.238 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Example_Top_drc_routed.rpt -pb Example_Top_drc_routed.pb -rpx Example_Top_drc_routed.rpx
+Command: report_drc -file Example_Top_drc_routed.rpt -pb Example_Top_drc_routed.pb -rpx Example_Top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2078.238 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file Example_Top_methodology_drc_routed.rpt -pb Example_Top_methodology_drc_routed.pb -rpx Example_Top_methodology_drc_routed.rpx
+Command: report_methodology -file Example_Top_methodology_drc_routed.rpt -pb Example_Top_methodology_drc_routed.pb -rpx Example_Top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.runs/impl_1/Example_Top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2110.578 ; gain = 32.340
+INFO: [runtcl-4] Executing : report_power -file Example_Top_power_routed.rpt -pb Example_Top_power_summary_routed.pb -rpx Example_Top_power_routed.rpx
+Command: report_power -file Example_Top_power_routed.rpt -pb Example_Top_power_summary_routed.pb -rpx Example_Top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+98 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2110.578 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file Example_Top_route_status.rpt -pb Example_Top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Example_Top_timing_summary_routed.rpt -pb Example_Top_timing_summary_routed.pb -rpx Example_Top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Example_Top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Example_Top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Example_Top_bus_skew_routed.rpt -pb Example_Top_bus_skew_routed.pb -rpx Example_Top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 08:50:55 2020...

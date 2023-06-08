@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  7 12:13:49 2023
+# Process ID: 6160
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2
+# Command line: vivado.exe -log uart_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_test.tcl -notrace
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2/uart_test.vdi
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/usb_to_uart_test/uart_test/uart_test.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source uart_test.tcl -notrace

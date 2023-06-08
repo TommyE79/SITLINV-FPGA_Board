@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug 31 18:16:55 2020
+# Process ID: 3408
+# Current directory: F:/K325/sd_test/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2268 F:\K325\sd_test\sd_test\sd_test.xpr
+# Log file: F:/K325/sd_test/sd_test/vivado.log
+# Journal file: F:/K325/sd_test/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325/sd_test/sd_test/sd_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/v2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_ref' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-1' used to customize the IP 'clk_ref' do not match.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-1' used to customize the IP 'ila_0' do not match.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 838.852 ; gain = 175.031
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 31 18:29:25 2020...
+ref] -log ip_upgrade.log
+Upgrading 'clk_ref'
+INFO: [Project 1-386] Moving file 'F:/K325/sd_test/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref.xci' from fileset 'clk_ref' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_ref to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_ref'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/K325/sd_test/sd_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1095.258 ; gain = 170.785
+export_ip_user_files -of_objects [get_ips clk_ref] -no_script -sync -force -quiet
+upgrade_ip -srcset ila_0 -vlnv xilinx.com:ip:ila:6.2 [get_ips  ila_0] -log ip_upgrade.log
+Upgrading 'ila_0'
+INFO: [Project 1-386] Moving file 'F:/K325/sd_test/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated ila_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/K325/sd_test/sd_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:01:01 ; elapsed = 00:00:55 . Memory (MB): peak = 1157.988 ; gain = 45.371
+export_ip_user_files -of_objects [get_ips ila_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_676
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/K325/sd_test/sd_test/sd_test.runs/synth_676
+
+launch_runs impl_2 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/K325/sd_test/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_ref'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_ref'...
+[Mon Aug 31 18:20:52 2020] Launched clk_ref_synth_1, ila_0_synth_1, synth_676...
+Run output will be captured here:
+clk_ref_synth_1: F:/K325/sd_test/sd_test/sd_test.runs/clk_ref_synth_1/runme.log
+ila_0_synth_1: F:/K325/sd_test/sd_test/sd_test.runs/ila_0_synth_1/runme.log
+synth_676: F:/K325/sd_test/sd_test/sd_test.runs/synth_676/runme.log
+[Mon Aug 31 18:20:52 2020] Launched impl_2...
+Run output will be captured here: F:/K325/sd_test/sd_test/sd_test.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1174.914 ; gain = 16.926
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2308.133 ; gain = 1122.598
+set_property PROGRAM.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ila_m0"}]]
+display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2379.414 ; gain = 15.980
+set_property PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {F:/K325/sd_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2379.414 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 31 19:06:32 2020...

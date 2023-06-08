@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xE82F996D
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                  Checksum
+0x00000000    0x0016BC8B    Jan 13 20:02:09 2023    D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/sdcard_test/sd_test/sd_test.runs/impl_2/sd_card_test.bit    0x00D568E1
+File Checksum Total                                                                                                                                          0x00D568E1

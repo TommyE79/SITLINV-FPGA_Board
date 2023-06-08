@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug 22 22:31:17 2020
+# Process ID: 7408
+# Current directory: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2488 F:\K325667\PCIe_DMA_V2_5031_spix4_ok\PCIe_DMA_V2_5031_spix4_ok\PCIE_DMA_Demo.xpr
+# Log file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/vivado.log
+# Journal file: F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/PCIe_DMA_V2_5031_spix4_ok/PCIe_DMA_V2_5031_spix4_ok/PCIE_DMA_Demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 946.898 ; gain = 206.777
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 22:45:03 2020...

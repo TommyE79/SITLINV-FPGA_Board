@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 19:49:08 2023
+# Process ID: 5116
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1600 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\hdmi_inout\hdmi_inout\project_1\project_1.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset video_pll -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  video_pll] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips video_pll] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+set_property flow {Vivado Implementation 2019} [get_runs impl_1]
+create_run impl_676 -parent_run synth_1 -flow {Vivado Implementation 2019} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_676]
+set_property part xc7k325tffg676-2 [current_project]
+reset_run synth_1
+launch_runs impl_676 -to_step write_bitstream -jobs 32
+wait_on_run impl_676
+upgrade_ip -srcset video_pll -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  video_pll] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips video_pll] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_676 -to_step write_bitstream -jobs 32
+wait_on_run impl_676
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/hdmi_inout/hdmi_inout/project_1/project_1.runs/impl_676/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

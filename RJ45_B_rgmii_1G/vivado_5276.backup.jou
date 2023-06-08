@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 16 12:40:49 2022
+# Process ID: 5276
+# Current directory: E:/golden_pl_prj/325/golden_rgmii_1gb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5144 E:\golden_pl_prj\325\golden_rgmii_1gb\golden_rgmii_1gb.xpr
+# Log file: E:/golden_pl_prj/325/golden_rgmii_1gb/vivado.log
+# Journal file: E:/golden_pl_prj/325/golden_rgmii_1gb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/golden_pl_prj/325/golden_rgmii_1gb/golden_rgmii_1gb.xpr
+update_compile_order -fileset sources_1
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+current_run [get_runs impl_1_copy_1]
+set_property part xc7k325tffg900-2 [current_project]
+upgrade_ip -srcset ram -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  ram] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ram] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1_copy_1

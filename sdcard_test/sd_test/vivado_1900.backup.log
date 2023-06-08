@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun  5 07:51:59 2020
+# Process ID: 1900
+# Current directory: F:/K325667/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent736 F:\K325667\sd_test\sd_test.xpr
+# Log file: F:/K325667/sd_test/vivado.log
+# Journal file: F:/K325667/sd_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/K325667/sd_test/sd_test.xpr
+INFO: [Project 1-313] Project file moved from 'D:/AX7325/demo/07_sd_test/sd_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/vivado2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_0' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'clk_ref' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_ref' (customized with software release 2017.4) has a newer major version in the IP Catalog. * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+INFO: [Project 1-230] Project 'sd_test.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 928.852 ; gain = 152.852
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_ref -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_ref] -log ip_upgrade.log
+Upgrading 'clk_ref'
+INFO: [Project 1-386] Moving file 'F:/K325667/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref.xci' from fileset 'clk_ref' to fileset 'sources_1'.
+INFO: [IP_Flow 19-1972] Upgraded clk_ref from Clocking Wizard 5.4 to Clocking Wizard 6.0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_ref'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/K325667/sd_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1056.371 ; gain = 127.520
+export_ip_user_files -of_objects [get_ips clk_ref] -no_script -sync -force -quiet
+upgrade_ip -srcset ila_0 -vlnv xilinx.com:ip:ila:6.2 [get_ips  ila_0] -log ip_upgrade.log
+Upgrading 'ila_0'
+INFO: [Project 1-386] Moving file 'F:/K325667/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded ila_0 (ILA (Integrated Logic Analyzer) 6.2) from revision 5 to revision 9
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/K325667/sd_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 1120.258 ; gain = 63.887
+export_ip_user_files -of_objects [get_ips ila_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 32
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/K325667/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_ref'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_ref'...
+[Fri Jun  5 08:01:02 2020] Launched clk_ref_synth_1, ila_0_synth_1...
+Run output will be captured here:
+clk_ref_synth_1: F:/K325667/sd_test/sd_test.runs/clk_ref_synth_1/runme.log
+ila_0_synth_1: F:/K325667/sd_test/sd_test.runs/ila_0_synth_1/runme.log
+[Fri Jun  5 08:01:03 2020] Launched synth_1...
+Run output will be captured here: F:/K325667/sd_test/sd_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1162.723 ; gain = 12.844
+set_property flow {Vivado Synthesis 2019} [get_runs synth_1]
+create_run synth_676 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7k325tffg900-1
+current_run [get_runs synth_676]
+set_property part xc7k325tffg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'clk_ref' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-1' used to customize the IP 'clk_ref' do not match.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Current project part 'xc7k325tffg676-2' and the part 'xc7k325tffg900-1' used to customize the IP 'ila_0' do not match.
+set_property flow {Vivado Implementation 2015} [get_runs impl_2]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_2]
+reset_run clk_ref_synth_1
+reset_run ila_0_synth_1
+launch_runs synth_676 -jobs 32
+WARNING: [Project 1-577] IP run clk_ref_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-577] IP run ila_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+F:/K325667/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+F:/K325667/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+F:/K325667/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+F:/K325667/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0.xci
+
+WARNING: [Project 1-576] IP 'F:/K325667/sd_test/sd_test.srcs/sources_1/ip/clk_ref/clk_ref.xci' in run clk_ref_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'F:/K325667/sd_test/sd_test.srcs/sources_1/ip/ila_0/ila_0.xci' in run ila_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Fri Jun  5 08:06:14 2020] Launched clk_ref_synth_1, ila_0_synth_1...
+Run output will be captured here:
+clk_ref_synth_1: F:/K325667/sd_test/sd_test.runs/clk_ref_synth_1/runme.log
+ila_0_synth_1: F:/K325667/sd_test/sd_test.runs/ila_0_synth_1/runme.log
+[Fri Jun  5 08:06:14 2020] Launched synth_676...
+Run output will be captured here: F:/K325667/sd_test/sd_test.runs/synth_676/runme.log
+launch_runs impl_2 -jobs 32
+[Fri Jun  5 08:11:15 2020] Launched impl_2...
+Run output will be captured here: F:/K325667/sd_test/sd_test.runs/impl_2/runme.log
+reset_run synth_676
+launch_runs impl_2 -to_step write_bitstream -jobs 32
+[Fri Jun  5 08:17:42 2020] Launched synth_676...
+Run output will be captured here: F:/K325667/sd_test/sd_test.runs/synth_676/runme.log
+[Fri Jun  5 08:17:42 2020] Launched impl_2...
+Run output will be captured here: F:/K325667/sd_test/sd_test.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.554 . Memory (MB): peak = 2083.266 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.554 . Memory (MB): peak = 2083.266 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2083.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 50 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 44 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:35 . Memory (MB): peak = 2308.020 ; gain = 1118.129
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 08:27:49 2020...

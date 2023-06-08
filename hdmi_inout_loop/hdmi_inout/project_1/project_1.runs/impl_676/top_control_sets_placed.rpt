@@ -1,0 +1,122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Jan 11 19:57:18 2023
+| Host         : LYC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   149 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |    14 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             296 |          114 |
+| No           | No                    | Yes                    |              36 |           21 |
+| No           | Yes                   | No                     |             112 |           47 |
+| Yes          | No                    | No                     |              43 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             148 |           41 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                                           Enable Signal                                           |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  video_pll_0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/RdyLostReset/SyncAsyncx/oSyncStages[1]              |                1 |              1 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pIDLY_LD_i_1_n_0              |                1 |              1 |
+|  video_pll_0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/aRst_int_0                            |                1 |              2 |
+|  video_pll_0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                1 |              2 |
+|  video_pll_0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/RdyLostReset/aRst_int                               |                1 |              2 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClk      |                                                                                                   | rgb2dvi_m0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/in0                                                 |                1 |              2 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods[3]_i_2_n_0    | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSDA/SS[0]           |                1 |              4 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods[3]_i_2__0_n_0 | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSCL/SS[0]           |                1 |              4 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/FSM_onehot_sState_reg[3]                    |                                                                               |                2 |              4 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClk      |                                                                                                   | rgb2dvi_m0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenEn                                        | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenRst                   |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pAligned_reg_0                |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__1_n_0                          |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenEn                                        | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenRst                   |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pAligned_reg_0                |                3 |              5 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/TMDS_ClockingX/sel                                                                     | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pAligned_reg_0                |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__0_n_0                          |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenEn                                        | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenRst                   |                3 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknRst                    |                3 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknRst                    |                3 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknRst                    |                3 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pMeRdy_int_reg_1[0]          |                2 |              8 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/SR[0]                        |                2 |              8 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/dataByte[7]_i_1_n_0                         |                                                                               |                2 |              8 |
+|  video_pll_0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                5 |              9 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClk      |                                                                                                   | rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1_n_0                 |                4 |             10 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/SR[0]                        |                5 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pState[10]_i_1_n_0                                | dvi2rgb_m0/DataDecoders[2].DecoderX/pAlignRst_reg_n_0                         |                3 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pState[10]_i_1__0_n_0                             | dvi2rgb_m0/DataDecoders[1].DecoderX/pAlignRst_reg_n_0                         |                4 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pState[10]_i_1__1_n_0                             | dvi2rgb_m0/DataDecoders[0].DecoderX/pAlignRst_reg_n_0                         |                2 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                9 |             12 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/E[0]                                        |                                                                               |                5 |             16 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pAligned_reg_0                |                7 |             21 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[0].DecoderX/sel                                                           | dvi2rgb_m0/DataDecoders[0].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[2].DecoderX/sel                                                           | dvi2rgb_m0/DataDecoders[2].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  video_pll_0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[1].DecoderX/sel                                                           | dvi2rgb_m0/DataDecoders[1].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClk      |                                                                                                   | rgb2dvi_m0/DataEncoders[0].DataEncoder/SR[0]                                  |               17 |             32 |
+|  video_pll_0/inst/clk_out1                            |                                                                                                   |                                                                               |               24 |             36 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pAllVld                                           |                                                                               |                6 |             48 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClk      |                                                                                                   |                                                                               |               37 |            142 |
+|  dvi2rgb_m0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |                                                                                                   |                                                                               |               53 |            145 |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+

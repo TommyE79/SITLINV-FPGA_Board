@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 13 19:38:14 2023
+# Process ID: 1732
+# Current directory: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_LED/LED_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4924 D:\BaiduNetdiskDownload\K7325_676_hdmi_inout\SFP_LED\LED_TEST\LED_TEST.xpr
+# Log file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_LED/LED_TEST/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_LED/LED_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_LED/LED_TEST/LED_TEST.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/BaiduNetdiskDownload/K7325_676_hdmi_inout/SFP_LED/LED_TEST/LED_TEST.runs/impl_2/led_test.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k325t_0] -mem_dev [lindex [get_cfgmem_parts {s25fl256sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/K325/LED_TEST/LED_TEST/LED_TEST.runs/impl_2/led_test.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
