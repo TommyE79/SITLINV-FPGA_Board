@@ -16,7 +16,7 @@ Neue Version im Jahr 2023. Die Sendung beginnt am 6. Februar 2023.
 ![Demo4](/Pictures/Scb9a3268e54f4051bc4431a06dc7a3ca7.jpg)
 ![Demo5](/Pictures/S7c510c829e904607b51bce0f60f5ab4ek.jpg)
 ![Demo6](/Pictures/S610e15ef9633412596b2afc670953398C.jpg)
-![Demo7](/Pictures/H4d2399081d6548dbaa713d3e01b41d64y.jpg)
+![Demo7](/Pictures/H4d2399081d6548dbaa713d3e01b41d64y.png)
 
 
 Xc7k325t PCIE-Karte
